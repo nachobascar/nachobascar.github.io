@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .block-element {
+        display: block; border-radius: 0.5rem; text-align: start;
+        padding: 0.5rem; margin: 0.5rem; background-color: #f0f0f0;
+        border: 1px solid #ccc; font-size: 0.8rem;
+        font-family: Arial, sans-serif;
+        text-wrap: pretty;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .clickable-element {
+        cursor: pointer; background-color: #e0f7fa;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+      .attrs {
+        font-size: 0.8rem;
+        color: #555;
+      }
+    </style>
+  </head>
+    <div class="block-element ">
+      <p>ID=0 <span class="attrs">body</span></p>
+      <div class="block-element clickable-element">
+        <p>ID=1 <span class="attrs">a:  clickable = true; href = #bodyContent;</span></p>
+        <p>Jump to content</p>
+      </div>
+      <div class="block-element ">
+        <p>ID=4 <span class="attrs">div,header</span></p>
+        <div class="block-element ">
+          <p>ID=5 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=7 <span class="attrs">nav,div:  aria-label = "Site"; title = "Main menu";</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=8 <span class="attrs">input:  clickable = true; type = checkbox; role = "button"; aria-haspopup = "true"; aria-label = "Main menu"; value = "on";</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=9 <span class="attrs">label:  clickable = true; aria-hidden = "true";</span></p>
+              <p>Main menu</p>
+            </div>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=13 <span class="attrs">a:  clickable = true; href = /wiki/Main_Page;</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=14 <span class="attrs">img:  clickable = true; src = /static/images/icons/wikipedia.png; aria-hidden = "true";</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=15 <span class="attrs">span:  clickable = true;</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=16 <span class="attrs">img:  clickable = true; alt = "Wikipedia"; src = /static/images/mobile/copyright/wikipedia-wordmark-en.svg;</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=17 <span class="attrs">img:  clickable = true; alt = "The Free Encyclopedia"; src = /static/images/mobile/copyright/wikipedia-tagline-en.svg;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=18 <span class="attrs">div</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=20 <span class="attrs">div,a:  clickable = true; role = "search"; href = /wiki/Special:Search; title = "Search Wikipedia [alt-shift-f]";</span></p>
+            <p>Search</p>
+          </div>
+          <div class="block-element ">
+            <p>ID=24 <span class="attrs">nav:  aria-label = "Personal tools";</span></p>
+            <div class="block-element ">
+              <p>ID=25 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=27 <span class="attrs">nav,div:  aria-label = "Appearance"; title = "Change the appearance of the page's font size, width, and color";</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=28 <span class="attrs">input:  clickable = true; type = checkbox; role = "button"; aria-haspopup = "true"; aria-label = "Appearance"; value = "on";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=29 <span class="attrs">label:  clickable = true; aria-hidden = "true";</span></p>
+                  <p>Appearance</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=35 <span class="attrs">div,ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=37 <span class="attrs">li,a:  clickable = true; href = https://donate.wikimedia.org/?wmf_source=donate&wm...;</span></p>
+                  <p>Donate</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=41 <span class="attrs">li,a:  clickable = true; href = /w/index.php?title=Special:CreateAccount&returnto=...; title = "You are encouraged to create an account and log in; however, it is not mandatory";</span></p>
+                  <p>Create account</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=45 <span class="attrs">li,a:  clickable = true; href = /w/index.php?title=Special:UserLogin&returnto=Arti...; title = "You're encouraged to log in; however, it's not mandatory. [alt-shift-o]";</span></p>
+                  <p>Log in</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=48 <span class="attrs">div:  title = "Log in and more options";</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=49 <span class="attrs">input:  clickable = true; type = checkbox; role = "button"; aria-haspopup = "true"; aria-label = "Personal tools"; value = "on";</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=50 <span class="attrs">label:  clickable = true; aria-hidden = "true";</span></p>
+                <p>Personal tools</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=55 <span class="attrs">div</span></p>
+        <div class="block-element ">
+          <p>ID=63 <span class="attrs">div,main</span></p>
+          <div class="block-element ">
+            <p>ID=64 <span class="attrs">header</span></p>
+            <div class="block-element ">
+              <p>ID=66 <span class="attrs">nav,div:  aria-label = "Contents"; title = "Table of Contents";</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=67 <span class="attrs">input:  clickable = true; type = checkbox; role = "button"; aria-haspopup = "true"; aria-label = "Toggle the table of contents"; value = "on";</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=68 <span class="attrs">label:  clickable = true; aria-hidden = "true";</span></p>
+                <p>Toggle the table of contents</p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=75 <span class="attrs">div</span></p>
+              <p>Artificial gravity</p>
+              <div class="block-element clickable-element">
+                <p>ID=76 <span class="attrs">input:  clickable = true; type = checkbox; role = "button"; aria-haspopup = "true"; aria-label = "Go to an article in another language. Available in 28 languages"; value = "on";</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=77 <span class="attrs">label:  clickable = true; aria-hidden = "true";</span></p>
+                <p>28 languages</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=82 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=87 <span class="attrs">div,nav,div,ul:  aria-label = "Namespaces";</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=89 <span class="attrs">li,a:  clickable = true; href = /wiki/Artificial_gravity; title = "View the content page [alt-shift-c]";</span></p>
+                <p>Article</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=93 <span class="attrs">li,a:  clickable = true; href = /wiki/Talk:Artificial_gravity; title = "Discuss improvements to the content page [alt-shift-t]";</span></p>
+                <p>Talk</p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=96 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=100 <span class="attrs">nav,div,ul:  aria-label = "Views";</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=102 <span class="attrs">li,a:  clickable = true; href = /wiki/Artificial_gravity;</span></p>
+                  <p>Read</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=106 <span class="attrs">li,a:  clickable = true; href = /w/index.php?title=Artificial_gravity&action=edit; title = "Edit this page [alt-shift-e]";</span></p>
+                  <p>Edit</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=110 <span class="attrs">li,a:  clickable = true; href = /w/index.php?title=Artificial_gravity&action=history; title = "Past revisions of this page [alt-shift-h]";</span></p>
+                  <p>View history</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=114 <span class="attrs">nav,div:  aria-label = "Page tools";</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=115 <span class="attrs">input:  clickable = true; type = checkbox; role = "button"; aria-haspopup = "true"; aria-label = "Tools"; value = "on";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=116 <span class="attrs">label:  clickable = true; aria-hidden = "true";</span></p>
+                  <p>Tools</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=120 <span class="attrs">div:  aria-labelledby = "firstHeading";</span></p>
+            <div class="block-element ">
+              <p>ID=128 <span class="attrs">div</span></p>
+              <p>From Wikipedia, the free encyclopedia</p>
+              <div class="block-element ">
+                <p>ID=131 <span class="attrs">table,tbody,tr:  role = "presentation";</span></p>
+                <div class="block-element ">
+                  <p>ID=136 <span class="attrs">td,div,span,img:  src = //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png;</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=139 <span class="attrs">td,div</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=140 <span class="attrs">button:  clickable = true; type = button; aria-expanded = "true";</span></p>
+                    <p>hide</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=147 <span class="attrs">b,a:  clickable = true; href = /wiki/Special:EditPage/Artificial_gravity; title = "Special:EditPage/Artificial gravity";</span></p>
+                    <p>This article has multiple issues. Please help improve it</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=151 <span class="attrs">b,a:  clickable = true; href = /wiki/Talk:Artificial_gravity; title = "Talk:Artificial gravity";</span></p>
+                    <p>or discuss these issues on the talk page</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=157 <span class="attrs">small,i,a:  clickable = true; href = /wiki/Help:Maintenance_template_removal; title = "Help:Maintenance template removal";</span></p>
+                    <p>. ( Learn how and when to remove these messages )</p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=160 <span class="attrs">div</span></p>
+                    <div class="block-element ">
+                      <p>ID=165 <span class="attrs">table,tbody,tr,td,div:  role = "presentation";</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=169 <span class="attrs">b,a:  clickable = true; href = /wiki/Wikipedia:Verifiability; title = "Wikipedia:Verifiability";</span></p>
+                        <p>This article needs additional citations for verification</p>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=171 <span class="attrs">text</span></p>
+                        <p>. ( August 2017 )</p>
+                      </div>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=182 <span class="attrs">table,tbody,tr,td,div:  role = "presentation";</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=186 <span class="attrs">b,a:  clickable = true; href = /wiki/Wikipedia:SYNTH; title = "Wikipedia:SYNTH";</span></p>
+                        <p>This article or section possibly contains original synthesis .</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=190 <span class="attrs">a:  clickable = true; href = /wiki/Wikipedia:Verifiability; title = "Wikipedia:Verifiability";</span></p>
+                        <p>Source material should verifiably mention</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=193 <span class="attrs">a:  clickable = true; href = /wiki/Wikipedia:Content_removal#Irrelevant_informa...; title = "Wikipedia:Content removal";</span></p>
+                        <p>and relate</p>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=195 <span class="attrs">text</span></p>
+                        <p>to the main topic. ( May 2018 )</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=202 <span class="attrs">figure</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=204 <span class="attrs">a,img:  clickable = true; href = /wiki/File:The_Agena_Target_Docking_Vehicle_at_a_d...; src = //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Agena_Target_Docking_Vehicle_at_a_distance_of_approximately_80_feet_from_the_Gemini-11_spacecraft.jpg/250px-The_Agena_Target_Docking_Vehicle_at_a_distance_of_approximately_80_feet_from_the_Gemini-11_spacecraft.jpg;</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=205 <span class="attrs">figcaption</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=206 <span class="attrs">a:  clickable = true; href = /wiki/Gemini_11; title = "Gemini 11";</span></p>
+                    <p>Gemini 11</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=209 <span class="attrs">a:  clickable = true; href = /wiki/Agena_target_vehicle; title = "Agena target vehicle";</span></p>
+                    <p>tethered in 1966 the GATV-5006 Agena target vehicle</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=212 <span class="attrs">a:  clickable = true; href = /wiki/Microgravity; title = "Microgravity";</span></p>
+                    <p>performing various tests including a first artificial gravity test in a microgravity environment.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=215 <span class="attrs">figure</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=217 <span class="attrs">a,img:  clickable = true; href = /wiki/File:Nautilus-X_ISS_demo_1.png; src = //upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nautilus-X_ISS_demo_1.png/250px-Nautilus-X_ISS_demo_1.png;</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=220 <span class="attrs">figcaption,a:  clickable = true; href = /wiki/Nautilus-X; title = "Nautilus-X";</span></p>
+                  <p>Proposed Nautilus-X International space station centrifuge demo concept, 2011</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=223 <span class="attrs">p</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=227 <span class="attrs">a:  clickable = true; href = /wiki/Inertial_force; title = "Inertial force";</span></p>
+                  <p>Artificial gravity is the creation of an inertial force</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=230 <span class="attrs">a:  clickable = true; href = /wiki/Gravity; title = "Gravity";</span></p>
+                  <p>that mimics the effects of a gravitational</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=233 <span class="attrs">a:  clickable = true; href = /wiki/Circular_motion; title = "Circular motion";</span></p>
+                  <p>force, usually by rotation</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=237 <span class="attrs">sup,a:  clickable = true; href = #cite_note-iaaweb.org-1;</span></p>
+                  <p>. [ 1 ]</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=247 <span class="attrs">a:  clickable = true; href = /wiki/Centrifugal_force; title = "Centrifugal force";</span></p>
+                  <p>Artificial gravity, or rotational gravity , is thus the appearance of a centrifugal force</p>
+                </div>
+                <p>... 2 more (EXPAND_ID=223)</p>
+                <div class="block-element clickable-element">
+                  <p>ID=256 <span class="attrs">a:  clickable = true; href = /wiki/Normal_force; title = "Normal force";</span></p>
+                  <p>via normal force</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=259 <span class="attrs">a:  clickable = true; href = /wiki/Linear_acceleration; title = "Linear acceleration";</span></p>
+                  <p>in the non-rotating frame of reference), as opposed to the force experienced in linear acceleration</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=262 <span class="attrs">a:  clickable = true; href = /wiki/Equivalence_principle; title = "Equivalence principle";</span></p>
+                  <p>, which by the equivalence principle</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=265 <span class="attrs">a:  clickable = true; href = /wiki/Rocket_engine; title = "Rocket engine";</span></p>
+                  <p>is indistinguishable from gravity.
+In a more general sense, "artificial gravity" may also refer to the effect of linear acceleration, e.g. by means of a rocket engine</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=269 <span class="attrs">sup,a:  clickable = true; href = #cite_note-iaaweb.org-1;</span></p>
+                  <p>. [ 1 ]</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=275 <span class="attrs">p</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=278 <span class="attrs">sup,a:  clickable = true; href = #cite_note-2;</span></p>
+                  <p>Rotational simulated gravity has been used in simulations to help astronauts train for extreme conditions. [ 2 ]</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=285 <span class="attrs">a:  clickable = true; href = /wiki/Human_spaceflight; title = "Human spaceflight";</span></p>
+                  <p>Rotational simulated gravity has been proposed as a solution in human spaceflight</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=288 <span class="attrs">a:  clickable = true; href = /wiki/Effect_of_spaceflight_on_the_human_body; title = "Effect of spaceflight on the human body";</span></p>
+                  <p>to the adverse health effects caused by prolonged weightlessness</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=292 <span class="attrs">sup,a:  clickable = true; href = #cite_note-clement2015-3;</span></p>
+                  <p>. [ 3 ]</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=299 <span class="attrs">a:  clickable = true; href = /wiki/Centripetal_force; title = "Centripetal force";</span></p>
+                  <p>However, there are no current practical outer space applications of artificial gravity for humans due to concerns about the size and cost of a spacecraft necessary to produce a useful centripetal force</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=306 <span class="attrs">sup,a:  clickable = true; href = #cite_note-popularmechanics.com-4;</span></p>
+                  <p>comparable to the gravitational field strength on Earth ( g ). [ 4 ]</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=314 <span class="attrs">sup,a:  clickable = true; href = #cite_note-ncbi.nlm.nih.gov-5;</span></p>
+                  <p>Scientists are concerned about the effect of such a system on the inner ear of the occupants. The concern is that using centripetal force to create artificial gravity will cause disturbances in the inner ear leading to nausea and disorientation. The adverse effects may prove intolerable for the occupants. [ 5 ]</p>
+                </div>
+              </div>
+              <p>... 47 more (EXPAND_ID=128)</p>
+              <div class="block-element ">
+                <p>ID=1363 <span class="attrs">div,ol</span></p>
+                <div class="block-element ">
+                  <p>ID=1364 <span class="attrs">li</span></p>
+                  <div class="block-element ">
+                    <p>ID=1365 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1367 <span class="attrs">a:  clickable = true; href = #cite_ref-iaaweb.org_1-0;</span></p>
+                      <p>^ Jump up to: a</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1374 <span class="attrs">a:  clickable = true; href = #cite_ref-iaaweb.org_1-1;</span></p>
+                      <p>b</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1379 <span class="attrs">a:  clickable = true; href = #cite_ref-iaaweb.org_1-2;</span></p>
+                      <p>c</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1384 <span class="attrs">a:  clickable = true; href = #cite_ref-iaaweb.org_1-3;</span></p>
+                      <p>d</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1389 <span class="attrs">a:  clickable = true; href = #cite_ref-iaaweb.org_1-4;</span></p>
+                      <p>e</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=1395 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1397 <span class="attrs">a:  clickable = true; href = https://web.archive.org/web/20161013004743/http://...;</span></p>
+                      <p>Young, Laurence; Yajima, Kazuyoshi; Paloski, William, eds. (September 2009). Artificial Gravity Research to enable Human Space Exploration</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1403 <span class="attrs">a:  clickable = true; href = /wiki/International_Academy_of_Astronautics; title = "International Academy of Astronautics";</span></p>
+                      <p>(PDF) . International Academy of Astronautics</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1406 <span class="attrs">a:  clickable = true; href = /wiki/ISBN_(identifier); title = "ISBN (identifier)";</span></p>
+                      <p>. ISBN</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1409 <span class="attrs">a,bdi:  clickable = true; href = /wiki/Special:BookSources/978-2-917761-04-5; title = "Special:BookSources/978-2-917761-04-5";</span></p>
+                      <p>978-2-917761-04-5</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1412 <span class="attrs">a:  clickable = true; href = https://iaaweb.org/iaa/Scientific%20Activity/Study...;</span></p>
+                      <p>. Archived from the original (PDF) on October 13, 2016 . Retrieved February 23, 2022 .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=1424 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=1427 <span class="attrs">span,b,a:  clickable = true; href = #cite_ref-2; aria-label = "Jump up"; title = "Jump up";</span></p>
+                    <p>^</p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=1430 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1433 <span class="attrs">i,a:  clickable = true; href = /wiki/Aerospace_Medicine_and_Human_Performance; title = "Aerospace Medicine and Human Performance";</span></p>
+                      <p>Strauss, Samuel (July 2008). "Space medicine at the NASA-JSC, neutral buoyancy laboratory". Aviation, Space, and Environmental Medicine</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1442 <span class="attrs">a:  clickable = true; href = /wiki/ISSN_(identifier); title = "ISSN (identifier)";</span></p>
+                      <p>. 79 (7): 732– 733. ISSN</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1444 <span class="attrs">a:  clickable = true; href = https://search.worldcat.org/issn/0095-6562;</span></p>
+                      <p>0095-6562</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1447 <span class="attrs">a:  clickable = true; href = /wiki/LCCN_(identifier); title = "LCCN (identifier)";</span></p>
+                      <p>. LCCN</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1449 <span class="attrs">a:  clickable = true; href = https://lccn.loc.gov/75641492;</span></p>
+                      <p>75641492</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1452 <span class="attrs">a:  clickable = true; href = /wiki/OCLC_(identifier); title = "OCLC (identifier)";</span></p>
+                      <p>. OCLC</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1454 <span class="attrs">a:  clickable = true; href = https://search.worldcat.org/oclc/165744230;</span></p>
+                      <p>165744230</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1457 <span class="attrs">a:  clickable = true; href = /wiki/PMID_(identifier); title = "PMID (identifier)";</span></p>
+                      <p>. PMID</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1459 <span class="attrs">a:  clickable = true; href = https://pubmed.ncbi.nlm.nih.gov/18619137;</span></p>
+                      <p>18619137 .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=1463 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=1466 <span class="attrs">span,b,a:  clickable = true; href = #cite_ref-clement2015_3-0; aria-label = "Jump up"; title = "Jump up";</span></p>
+                    <p>^</p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=1469 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1471 <span class="attrs">a:  clickable = true; href = https://ntrs.nasa.gov/citations/20150009486;</span></p>
+                      <p>Clément, Gilles; Charles, John B.; Norsk, Peter; Paloski, William H. (February 15, 2015). Human Research Program Human Health Countermeasures Element: Evidence Report - Artificial Gravity</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1475 <span class="attrs">a:  clickable = true; href = /wiki/NASA; title = "NASA";</span></p>
+                      <p>(Technical report). NASA</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1478 <span class="attrs">a:  clickable = true; href = /wiki/Hdl_(identifier); title = "Hdl (identifier)";</span></p>
+                      <p>. hdl</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1481 <span class="attrs">a:  clickable = true; href = https://hdl.handle.net/2060%2F20150009486;</span></p>
+                      <p>: 2060/20150009486</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1484 <span class="attrs">a:  clickable = true; href = https://web.archive.org/web/20240312223508/https:/...;</span></p>
+                      <p>. Archived (PDF) from the original on March 12, 2024.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=1490 <span class="attrs">li</span></p>
+                  <div class="block-element ">
+                    <p>ID=1491 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1493 <span class="attrs">a:  clickable = true; href = #cite_ref-popularmechanics.com_4-0;</span></p>
+                      <p>^ Jump up to: a</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1500 <span class="attrs">a:  clickable = true; href = #cite_ref-popularmechanics.com_4-1;</span></p>
+                      <p>b</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1505 <span class="attrs">a:  clickable = true; href = #cite_ref-popularmechanics.com_4-2;</span></p>
+                      <p>c</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=1511 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1513 <span class="attrs">a:  clickable = true; href = https://www.popularmechanics.com/space/rockets/a89...;</span></p>
+                      <p>Feltman, Rachel (May 3, 2013). "Why Don't We Have Artificial Gravity?"</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1517 <span class="attrs">i,a:  clickable = true; href = /wiki/Popular_Mechanics; title = "Popular Mechanics";</span></p>
+                      <p>. Popular Mechanics</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1520 <span class="attrs">a:  clickable = true; href = /wiki/ISSN_(identifier); title = "ISSN (identifier)";</span></p>
+                      <p>. ISSN</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1522 <span class="attrs">a:  clickable = true; href = https://search.worldcat.org/issn/0032-4558;</span></p>
+                      <p>0032-4558</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1525 <span class="attrs">a:  clickable = true; href = /wiki/OCLC_(identifier); title = "OCLC (identifier)";</span></p>
+                      <p>. OCLC</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1527 <span class="attrs">a:  clickable = true; href = https://search.worldcat.org/oclc/671272936;</span></p>
+                      <p>671272936</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1530 <span class="attrs">a:  clickable = true; href = https://web.archive.org/web/20220101150056/https:/...;</span></p>
+                      <p>. Archived from the original on January 1, 2022 . Retrieved February 23, 2022 .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=1540 <span class="attrs">li</span></p>
+                  <div class="block-element ">
+                    <p>ID=1541 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1543 <span class="attrs">a:  clickable = true; href = #cite_ref-ncbi.nlm.nih.gov_5-0;</span></p>
+                      <p>^ Jump up to: a</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1550 <span class="attrs">a:  clickable = true; href = #cite_ref-ncbi.nlm.nih.gov_5-1;</span></p>
+                      <p>b</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1555 <span class="attrs">a:  clickable = true; href = #cite_ref-ncbi.nlm.nih.gov_5-2;</span></p>
+                      <p>c</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=1561 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=1563 <span class="attrs">a:  clickable = true; href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4470275;</span></p>
+                      <p>Clément, Gilles R.; Bukley, Angelia P.; Paloski, William H. (June 17, 2015). "Artificial gravity as a countermeasure for mitigating physiological deconditioning during long-duration space missions"</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1572 <span class="attrs">a:  clickable = true; href = /wiki/Doi_(identifier); title = "Doi (identifier)";</span></p>
+                      <p>. Frontiers in Systems Neuroscience . 9 : 92. doi</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1576 <span class="attrs">span,a:  clickable = true; title = "Freely accessible"; href = https://doi.org/10.3389%2Ffnsys.2015.00092;</span></p>
+                      <p>: 10.3389/fnsys.2015.00092</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1579 <span class="attrs">a:  clickable = true; href = /wiki/ISSN_(identifier); title = "ISSN (identifier)";</span></p>
+                      <p>. ISSN</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1581 <span class="attrs">a:  clickable = true; href = https://search.worldcat.org/issn/1662-5137;</span></p>
+                      <p>1662-5137</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1584 <span class="attrs">a:  clickable = true; href = /wiki/PMC_(identifier); title = "PMC (identifier)";</span></p>
+                      <p>. PMC</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1587 <span class="attrs">span,a:  clickable = true; title = "Freely accessible"; href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4470275;</span></p>
+                      <p>4470275</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1590 <span class="attrs">a:  clickable = true; href = /wiki/PMID_(identifier); title = "PMID (identifier)";</span></p>
+                      <p>. PMID</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=1592 <span class="attrs">a:  clickable = true; href = https://pubmed.ncbi.nlm.nih.gov/26136665;</span></p>
+                      <p>26136665 .</p>
+                    </div>
+                  </div>
+                </div>
+                <p>... 23 more (EXPAND_ID=1363)</p>
+                <div class="block-element ">
+                  <p>ID=2135 <span class="attrs">li</span></p>
+                  <div class="block-element ">
+                    <p>ID=2136 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2138 <span class="attrs">a:  clickable = true; href = #cite_ref-Futurism01a_29-0;</span></p>
+                      <p>^ Jump up to: a</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2145 <span class="attrs">a:  clickable = true; href = #cite_ref-Futurism01a_29-1;</span></p>
+                      <p>b</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=2151 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2152 <span class="attrs">a:  clickable = true; href = https://futurism.com/the-byte/china-artificial-moo...;</span></p>
+                      <p>"China building "Artificial Moon" that simulates low gravity with magnets"</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=2164 <span class="attrs">q</span></p>
+                      <p>. Futurism.com . Recurrent Ventures. January 12, 2022 . Retrieved January 17, 2022 . Interestingly, the facility was partly inspired by previous research conducted by Russian physicist Andrew Geim in which he floated a frog with a magnet. The experiment earned Geim the Ig Nobel Prize in Physics, a satirical award for unusual scientific research. It's cool that a quirky experiment involving floating a frog could lead to something approaching an honest-to-God antigravity chamber.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2167 <span class="attrs">li</span></p>
+                  <div class="block-element ">
+                    <p>ID=2168 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2170 <span class="attrs">a:  clickable = true; href = #cite_ref-scmp2022-01-12a_30-0;</span></p>
+                      <p>^ Jump up to: a</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2177 <span class="attrs">a:  clickable = true; href = #cite_ref-scmp2022-01-12a_30-1;</span></p>
+                      <p>b</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=2183 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2185 <span class="attrs">a:  clickable = true; href = https://www.scmp.com/news/china/science/article/31...;</span></p>
+                      <p>Chen, Stephen (January 12, 2022). "China has built an artificial moon that simulates low-gravity conditions on Earth"</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2188 <span class="attrs">a:  clickable = true; href = /wiki/South_China_Morning_Post; title = "South China Morning Post";</span></p>
+                      <p>. South China Morning Post</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=2196 <span class="attrs">q</span></p>
+                      <p>. Retrieved January 17, 2022 . It is said to be the first of its kind and could play a key role in the country's future lunar missions. The magnetic field supported the landscape and was inspired by experiments to levitate a frog.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2199 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2202 <span class="attrs">span,b,a:  clickable = true; href = #cite_ref-31; aria-label = "Jump up"; title = "Jump up";</span></p>
+                    <p>^</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2208 <span class="attrs">span,a:  clickable = true; href = /wiki/Jack_Williamson; title = "Jack Williamson";</span></p>
+                    <p>Collision Orbit , 1942 by Jack Williamson</p>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2210 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2213 <span class="attrs">span,b,a:  clickable = true; href = #cite_ref-32; aria-label = "Jump up"; title = "Jump up";</span></p>
+                    <p>^</p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=2215 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2217 <span class="attrs">i,a:  clickable = true; href = /wiki/Pale_Blue_Dot_(book); title = "Pale Blue Dot (book)";</span></p>
+                      <p>Pale Blue Dot : A Vision of the Human Future in Space</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2221 <span class="attrs">a:  clickable = true; href = /wiki/Carl_Sagan; title = "Carl Sagan";</span></p>
+                      <p>by Carl Sagan , Chapter 19</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2224 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2227 <span class="attrs">span,b,a:  clickable = true; href = #cite_ref-33; aria-label = "Jump up"; title = "Jump up";</span></p>
+                    <p>^</p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=2230 <span class="attrs">span,cite</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2231 <span class="attrs">a:  clickable = true; href = https://web.archive.org/web/20171228000202/https:/...;</span></p>
+                      <p>"Toward a new test of general relativity?"</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2234 <span class="attrs">a:  clickable = true; href = https://gsp.esa.int/article-view/-/wcl/Fd1ZihgaGrw...;</span></p>
+                      <p>. Esa.int. Archived from the original on December 28, 2017 . Retrieved August 6, 2013 .</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2250 <span class="attrs">div,span,a:  clickable = true; href = /w/index.php?title=Artificial_gravity&action=edit&...; title = "Edit section: External links";</span></p>
+                <p>External links [ edit ]</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=2256 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2260 <span class="attrs">div,span,a,img:  clickable = true; href = /wiki/File:Commons-logo.svg; src = //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png;</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2264 <span class="attrs">div,span,a:  clickable = true; href = https://commons.wikimedia.org/wiki/Category:Artifi...; title = "commons:Category:Artificial gravity";</span></p>
+                  <p>Wikimedia Commons has media related to Artificial gravity .</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=2267 <span class="attrs">ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2269 <span class="attrs">li,a:  clickable = true; href = http://www.artificial-gravity.com/;</span></p>
+                  <p>List of peer review papers on artificial gravity</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2272 <span class="attrs">li,a:  clickable = true; href = https://www.youtube.com/watch?v=zruVHZCAf24/;</span></p>
+                  <p>TEDx talk about artificial gravity</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2274 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2275 <span class="attrs">a:  clickable = true; href = http://www.projectrho.com/rocket/rocket3u.html;</span></p>
+                    <p>Overview of artificial gravity in Sci-Fi and Space Science</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2277 <span class="attrs">a:  clickable = true; href = https://web.archive.org/web/20100527233439/http://...;</span></p>
+                    <p>Archived</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2280 <span class="attrs">a:  clickable = true; href = /wiki/Wayback_Machine; title = "Wayback Machine";</span></p>
+                    <p>May 27, 2010, at the Wayback Machine</p>
+                  </div>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2283 <span class="attrs">li,a:  clickable = true; href = https://web.archive.org/web/20030116203809/http://...;</span></p>
+                  <p>NASA's Java simulation of artificial gravity</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2285 <span class="attrs">li</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2286 <span class="attrs">a:  clickable = true; href = http://selenianboondocks.com/2010/11/variable-grav...;</span></p>
+                    <p>Variable Gravity Research Facility (xGRF)</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2289 <span class="attrs">a:  clickable = true; href = /wiki/Bigelow_Aerospace; title = "Bigelow Aerospace";</span></p>
+                    <p>, concept with tethered rotating satellites, perhaps a Bigelow</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2291 <span class="attrs">a:  clickable = true; href = /wiki/B330; title = "B330";</span></p>
+                    <p>expandable module</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2294 <span class="attrs">a:  clickable = true; href = /wiki/Upper_stage; title = "Upper stage";</span></p>
+                    <p>and a spent upper stage as a counterweight</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=2302 <span class="attrs">div,table,tbody,tr,th:  role = "navigation"; aria-labelledby = "Space_medicine73";</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2303 <span class="attrs">button:  clickable = true; type = button; aria-expanded = "false";</span></p>
+                  <p>show</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2307 <span class="attrs">div,ul</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2310 <span class="attrs">li,a,abbr:  clickable = true; href = /wiki/Template:Space_medicine; title = "View this template";</span></p>
+                    <p>v</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2314 <span class="attrs">li,a,abbr:  clickable = true; href = /wiki/Template_talk:Space_medicine; title = "Discuss this template";</span></p>
+                    <p>t</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2318 <span class="attrs">li,a,abbr:  clickable = true; href = /wiki/Special:EditPage/Template:Space_medicine; title = "Edit this template";</span></p>
+                    <p>e</p>
+                  </div>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2321 <span class="attrs">div,a:  clickable = true; href = /wiki/Space_medicine; title = "Space medicine";</span></p>
+                  <p>Space medicine</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=2324 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=2325 <span class="attrs">a:  clickable = true; href = /wiki/Help:Category; title = "Help:Category";</span></p>
+                <p>Categories</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=2328 <span class="attrs">ul</span></p>
+                <p>:</p>
+                <div class="block-element clickable-element">
+                  <p>ID=2330 <span class="attrs">li,a:  clickable = true; href = /wiki/Category:Fictional_technology; title = "Category:Fictional technology";</span></p>
+                  <p>Fictional technology</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2333 <span class="attrs">li,a:  clickable = true; href = /wiki/Category:Gravity; title = "Category:Gravity";</span></p>
+                  <p>Gravity</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2336 <span class="attrs">li,a:  clickable = true; href = /wiki/Category:Space_colonization; title = "Category:Space colonization";</span></p>
+                  <p>Space colonization</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2339 <span class="attrs">li,a:  clickable = true; href = /wiki/Category:Scientific_speculation; title = "Category:Scientific speculation";</span></p>
+                  <p>Scientific speculation</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2342 <span class="attrs">li,a:  clickable = true; href = /wiki/Category:Space_medicine; title = "Category:Space medicine";</span></p>
+                  <p>Space medicine</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2345 <span class="attrs">li,a:  clickable = true; href = /wiki/Category:Rotation; title = "Category:Rotation";</span></p>
+                  <p>Rotation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=2348 <span class="attrs">div,footer</span></p>
+          <div class="block-element ">
+            <p>ID=2355 <span class="attrs">ul,li</span></p>
+            <p>This page was last edited on 5 May 2025, at 01:04 (UTC) .</p>
+            <div class="block-element clickable-element">
+              <p>ID=2357 <span class="attrs">a:  clickable = true; href = /wiki/Wikipedia:Text_of_the_Creative_Commons_Attri...; title = "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License";</span></p>
+              <p>Text is available under the Creative Commons Attribution-ShareAlike 4.0 License</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=2360 <span class="attrs">a:  clickable = true; href = https://foundation.wikimedia.org/wiki/Special:MyLa...; title = "foundation:Special:MyLanguage/Policy:Terms of Use";</span></p>
+              <p>;
+additional terms may apply. By using this site, you agree to the Terms of Use</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=2363 <span class="attrs">a:  clickable = true; href = https://foundation.wikimedia.org/wiki/Special:MyLa...; title = "foundation:Special:MyLanguage/Policy:Privacy policy";</span></p>
+              <p>and Privacy Policy</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=2366 <span class="attrs">a:  clickable = true; href = https://wikimediafoundation.org/;</span></p>
+              <p>. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization.</p>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=2369 <span class="attrs">ul</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=2371 <span class="attrs">li,a:  clickable = true; href = https://foundation.wikimedia.org/wiki/Special:MyLa...;</span></p>
+              <p>Privacy policy</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=2374 <span class="attrs">li,a:  clickable = true; href = /wiki/Wikipedia:About;</span></p>
+              <p>About Wikipedia</p>
+            </div>
+            <p>... 5 more (EXPAND_ID=2369)</p>
+            <div class="block-element clickable-element">
+              <p>ID=2392 <span class="attrs">li,a:  clickable = true; href = https://foundation.wikimedia.org/wiki/Special:MyLa...;</span></p>
+              <p>Cookie statement</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=2395 <span class="attrs">li,a:  clickable = true; href = //en.m.wikipedia.org/w/index.php?title=Artificial_...;</span></p>
+              <p>Mobile view</p>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=2397 <span class="attrs">ul</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=2400 <span class="attrs">li,a,picture:  clickable = true; href = https://www.wikimedia.org/;</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=2401 <span class="attrs">source:  clickable = true;</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2402 <span class="attrs">img:  clickable = true; src = /static/images/footer/wikimedia.svg; alt = "Wikimedia Foundation";</span></p>
+              </div>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=2405 <span class="attrs">li,a,picture:  clickable = true; href = https://www.mediawiki.org/;</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=2406 <span class="attrs">source:  clickable = true;</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2407 <span class="attrs">img:  clickable = true; src = /w/resources/assets/mediawiki_compact.svg; alt = "Powered by MediaWiki";</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=2409 <span class="attrs">div,ul</span></p>
+      </div>
+    </div>
+</html>
