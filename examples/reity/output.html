@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .block-element {
+        display: block; border-radius: 0.5rem; text-align: start;
+        padding: 0.5rem; margin: 0.5rem; background-color: #f0f0f0;
+        border: 1px solid #ccc; font-size: 0.8rem;
+        font-family: Arial, sans-serif;
+        text-wrap: pretty;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .clickable-element {
+        cursor: pointer; background-color: #e0f7fa;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+      .attrs {
+        font-size: 0.8rem;
+        color: #555;
+      }
+    </style>
+  </head>
+    <div class="block-element ">
+      <p>ID=0 <span class="attrs">body</span></p>
+      <div class="block-element ">
+        <p>ID=2 <span class="attrs">div</span></p>
+        <div class="block-element ">
+          <p>ID=5 <span class="attrs">div</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=8 <span class="attrs">a,div,svg:  clickable = true; href = /;</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=9 <span class="attrs">defs:  clickable = true;</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=11 <span class="attrs">g:  clickable = true;</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=12 <span class="attrs">path:  clickable = true;</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=13 <span class="attrs">path:  clickable = true;</span></p>
+              </div>
+              <p>... 3 more (EXPAND_ID=11)</p>
+              <div class="block-element clickable-element">
+                <p>ID=17 <span class="attrs">path:  clickable = true;</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=18 <span class="attrs">path:  clickable = true;</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=21 <span class="attrs">div,nav,div:  aria-label = "Sidebar";</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=22 <span class="attrs">a:  clickable = true; href = https://ayuda.reity.cl/es;</span></p>
+              <p>Preguntas frecuentes</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=24 <span class="attrs">a:  clickable = true; href = /blog/;</span></p>
+              <p>Blog</p>
+            </div>
+            <p>... 1 more (EXPAND_ID=21)</p>
+            <div class="block-element clickable-element">
+              <p>ID=28 <span class="attrs">a:  clickable = true; href = /marketplace/;</span></p>
+              <p>Marketplace</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=30 <span class="attrs">a:  clickable = true; aria-label = "account"; href = /account/;</span></p>
+              <p>Tu cuenta</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=32 <span class="attrs">div</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=38 <span class="attrs">div,button:  clickable = true; aria-labelledby = "slide-over"; role = "dialog"; aria-modal = "true";</span></p>
+            <p>Close</p>
+          </div>
+          <div class="block-element ">
+            <p>ID=41 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=45 <span class="attrs">div</span></p>
+              <p>Marketplace</p>
+              <div class="block-element clickable-element">
+                <p>ID=49 <span class="attrs">div,button,svg,path:  clickable = true; aria-hidden = "true";</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=55 <span class="attrs">div,button,svg,path:  clickable = true; aria-hidden = "true";</span></p>
+                <p>Fecha de lanzamiento</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=58 <span class="attrs">button,svg,path:  clickable = true; aria-hidden = "true";</span></p>
+              </div>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=60 <span class="attrs">a,div:  clickable = true; href = /account/propiedades/70/;</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=61 <span class="attrs">svg:  clickable = true;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=62 <span class="attrs">path:  clickable = true;</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=63 <span class="attrs">path:  clickable = true;</span></p>
+                </div>
+                <p>... 5 more (EXPAND_ID=61)</p>
+                <div class="block-element clickable-element">
+                  <p>ID=69 <span class="attrs">path:  clickable = true;</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=70 <span class="attrs">path:  clickable = true;</span></p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=71 <span class="attrs">div</span></p>
+                <p>Nuevo token socio preferente Invierte en proyectos para financiar su desarrollo, y recibe una mayor rentabilidad.</p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=75 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=78 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/71/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=79 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=80 <span class="attrs">a:  clickable = true; href = /propiedades/71/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=83 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>0</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=86 <span class="attrs">img:  clickable = true; alt = "Proyecto San Francisco (4 de 5)1"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FSan-Francisco%2FSanFrancisco.jpg&w=3840&q=75;</span></p>
+                      <p>00 : 03 : 44 : 30</p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=115 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=118 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=119 <span class="attrs">svg:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=120 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <div class="block-element clickable-element">
+                          <p>ID=121 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=122 <span class="attrs">span</span></p>
+                        <p>Socio preferente</p>
+                      </div>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=124 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=125 <span class="attrs">a:  clickable = true; href = /propiedades/71/;</span></p>
+                        <p>Proyecto San Francisco (4 de 5) No hay tokens disponibles</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=131 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=132 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=133 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=134 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=135 <span class="attrs">p</span></p>
+                          <p>5 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=139 <span class="attrs">div</span></p>
+                  <p>tir UF + 8.3% Cap Rate 8% en UF Riesgo Conservador 0 % financiado Próximamente</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=181 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/70/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=182 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=183 <span class="attrs">a:  clickable = true; href = /propiedades/70/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=186 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>480</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=189 <span class="attrs">img:  clickable = true; alt = "Proyecto San Francisco (3 de 5)1"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FSan-Francisco%2FSanFrancisco.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=190 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=193 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=194 <span class="attrs">svg:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=195 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <div class="block-element clickable-element">
+                          <p>ID=196 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=197 <span class="attrs">span</span></p>
+                        <p>Socio preferente</p>
+                      </div>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=199 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=200 <span class="attrs">a:  clickable = true; href = /propiedades/70/;</span></p>
+                        <p>Proyecto San Francisco (3 de 5) Desde $ 100.000 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=213 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=214 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=215 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=216 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=217 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=221 <span class="attrs">div</span></p>
+                  <p>tir UF + 8.3% Cap Rate 8% en UF Riesgo Conservador 99 % financiado ¡Últimos 43 tokens!</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=266 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/69/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=267 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=268 <span class="attrs">a:  clickable = true; href = /propiedades/69/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=271 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>389</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=274 <span class="attrs">img:  clickable = true; alt = "Proyecto San Francisco (2 de 5)1"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FSan-Francisco%2FSanFrancisco.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=275 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=278 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=279 <span class="attrs">svg:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=280 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <div class="block-element clickable-element">
+                          <p>ID=281 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=282 <span class="attrs">span</span></p>
+                        <p>Socio preferente</p>
+                      </div>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=284 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=285 <span class="attrs">a:  clickable = true; href = /propiedades/69/;</span></p>
+                        <p>Proyecto San Francisco (2 de 5) Desde $ 100.760 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=298 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=299 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=300 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=301 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=302 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=306 <span class="attrs">div</span></p>
+                  <p>tir UF + 8.3% Cap Rate 8% en UF Riesgo Conservador 100 % financiado 43 tokens en venta</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=350 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/68/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=351 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=352 <span class="attrs">a:  clickable = true; href = /propiedades/68/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=355 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>383</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=358 <span class="attrs">img:  clickable = true; alt = "Proyecto San Francisco (1/5)1"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FSan-Francisco%2FSanFrancisco.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=359 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=362 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=363 <span class="attrs">svg:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=364 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <div class="block-element clickable-element">
+                          <p>ID=365 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=366 <span class="attrs">span</span></p>
+                        <p>Socio preferente</p>
+                      </div>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=368 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=369 <span class="attrs">a:  clickable = true; href = /propiedades/68/;</span></p>
+                        <p>Proyecto San Francisco (1 de 5) Desde $ 101.727 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=382 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=383 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=384 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=385 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=386 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=390 <span class="attrs">div</span></p>
+                  <p>tir UF + 8.3% Cap Rate 8% en UF Riesgo Conservador 100 % financiado 41 tokens en venta</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=434 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/67/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=435 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=436 <span class="attrs">a:  clickable = true; href = /propiedades/67/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=439 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>227</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=442 <span class="attrs">img:  clickable = true; alt = "Edificio Vicuña Mackenna1"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FV.Mackenna%2FSin%2520t%25C3%25ADtulo-1_Mesa%2520de%2520trabajo%25201.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=443 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=446 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=447 <span class="attrs">svg:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=448 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <div class="block-element clickable-element">
+                          <p>ID=449 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <p>... 1 more (EXPAND_ID=447)</p>
+                        <div class="block-element clickable-element">
+                          <p>ID=451 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                        <div class="block-element clickable-element">
+                          <p>ID=452 <span class="attrs">path:  clickable = true;</span></p>
+                        </div>
+                      </div>
+                      <div class="block-element ">
+                        <p>ID=453 <span class="attrs">span</span></p>
+                        <p>Desarrollo</p>
+                      </div>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=455 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=456 <span class="attrs">a:  clickable = true; href = /propiedades/67/;</span></p>
+                        <p>Edificio Vicuña Mackenna Desde $ 100.000 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=469 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=470 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=471 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=472 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=473 <span class="attrs">p</span></p>
+                          <p>5 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=477 <span class="attrs">div</span></p>
+                  <p>tir 11.3% Cap Rate 7.21% Riesgo Muy conservador 100 % financiado 135 tokens disponibles</p>
+                </div>
+              </div>
+              <p>... 21 more (EXPAND_ID=75)</p>
+              <div class="block-element clickable-element">
+                <p>ID=2312 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/6/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2313 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2314 <span class="attrs">a:  clickable = true; href = /propiedades/6/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2317 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>261</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2320 <span class="attrs">img:  clickable = true; alt = "Parque Andino 2"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%252FParque-Andino%252FPilotoPAndino-07.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2321 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2326 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>Renta</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2329 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=2330 <span class="attrs">a:  clickable = true; href = /propiedades/6/;</span></p>
+                        <p>Edificio Parque Andino Desde $ 101.000 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=2343 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=2344 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=2345 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=2346 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=2347 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2351 <span class="attrs">div</span></p>
+                  <p>tir 11.04% Cap Rate 4.01% Riesgo Muy conservador 100 % financiado 24 tokens en venta</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2395 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/5/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2396 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2397 <span class="attrs">a:  clickable = true; href = /propiedades/5/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2400 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>164</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2403 <span class="attrs">img:  clickable = true; alt = "Circular 2"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%252FCircular%252FDSC06195%2520(1).jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2404 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2409 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>Renta</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2412 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=2413 <span class="attrs">a:  clickable = true; href = /propiedades/5/;</span></p>
+                        <p>Edificio Circular Desde $ 101.500 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=2426 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=2427 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=2428 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=2429 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=2430 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2434 <span class="attrs">div</span></p>
+                  <p>tir 11.15% Cap Rate 4.1% Riesgo Muy conservador 100 % financiado 31 tokens en venta</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2478 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/2/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2479 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2480 <span class="attrs">a:  clickable = true; href = /propiedades/2/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2483 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>155</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2486 <span class="attrs">img:  clickable = true; alt = "Ecuador 2"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FEcuador%2FDSC06566%2520%25281%2529-min.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2487 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2492 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>Renta</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2495 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=2496 <span class="attrs">a:  clickable = true; href = /propiedades/2/;</span></p>
+                        <p>Edificio Ecuador Desde $ 104.000 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=2509 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=2510 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=2511 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=2512 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=2513 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2517 <span class="attrs">div</span></p>
+                  <p>tir 12.92% Cap Rate 0% Riesgo Muy conservador 100 % financiado 29 tokens en venta</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2561 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/4/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2562 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2563 <span class="attrs">a:  clickable = true; href = /propiedades/4/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2566 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>199</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2569 <span class="attrs">img:  clickable = true; alt = "Prat 2"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%252FPrat%252FCopia%2520de%2520DSC00556.jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2570 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2575 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>Renta</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2578 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=2579 <span class="attrs">a:  clickable = true; href = /propiedades/4/;</span></p>
+                        <p>Edificio Prat Desde $ 102.000 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=2592 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=2593 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=2594 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=2595 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=2596 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2600 <span class="attrs">div</span></p>
+                  <p>tir 12.49% Cap Rate 3.84% Riesgo Muy conservador 100 % financiado 29 tokens en venta</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=2644 <span class="attrs">div,a,div:  clickable = true; href = /propiedades/1/;</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=2645 <span class="attrs">div:  clickable = true;</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=2646 <span class="attrs">a:  clickable = true; href = /propiedades/1/;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2649 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>229</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2652 <span class="attrs">img:  clickable = true; alt = "foto 1"; src = /_next/image/?url=https%3A%2F%2Freity.nyc3.cdn.digitaloceanspaces.com%2FPropiedades%2FAlbora%2FAlboraAgo2022-39%2520(1)%2520(2)%2520(1).jpg&w=3840&q=75;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=2653 <span class="attrs">div:  clickable = true;</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=2658 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+                      <p>Renta</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=2661 <span class="attrs">div:  clickable = true;</span></p>
+                      <div class="block-element clickable-element">
+                        <p>ID=2662 <span class="attrs">a:  clickable = true; href = /propiedades/1/;</span></p>
+                        <p>Edificio Albora Desde $ 105.800 / token</p>
+                      </div>
+                      <div class="block-element clickable-element">
+                        <p>ID=2675 <span class="attrs">div:  clickable = true;</span></p>
+                        <div class="block-element clickable-element">
+                          <p>ID=2676 <span class="attrs">svg:  clickable = true;</span></p>
+                          <div class="block-element clickable-element">
+                            <p>ID=2677 <span class="attrs">circle:  clickable = true;</span></p>
+                          </div>
+                          <div class="block-element clickable-element">
+                            <p>ID=2678 <span class="attrs">polyline:  clickable = true;</span></p>
+                          </div>
+                        </div>
+                        <div class="block-element ">
+                          <p>ID=2679 <span class="attrs">p</span></p>
+                          <p>3 años para su término</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2683 <span class="attrs">div</span></p>
+                  <p>tir 12.73% Cap Rate 1.45% Riesgo Muy conservador 100 % financiado 41 tokens en venta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=2725 <span class="attrs">footer:  aria-labelledby = "footer-heading";</span></p>
+          <div class="block-element ">
+            <p>ID=2726 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=2727 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=2735 <span class="attrs">div</span></p>
+                <p>Qué hacemos Democratizamos la inversión inmobiliaria. Invierte en tokens de propiedades desde $100.000 y desde todo el mundo. All rights reserved</p>
+                <div class="block-element clickable-element">
+                  <p>ID=2739 <span class="attrs">a,div,svg,path:  clickable = true; aria-label = "instagram"; href = https://www.instagram.com/reity.token/?hl=es; aria-hidden = "true";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2743 <span class="attrs">a,div,svg,path:  clickable = true; aria-label = "youtube"; href = https://www.youtube.com/@reitytoken; aria-hidden = "true";</span></p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=2744 <span class="attrs">svg</span></p>
+                <div class="block-element ">
+                  <p>ID=2745 <span class="attrs">defs</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=2747 <span class="attrs">g</span></p>
+                  <div class="block-element ">
+                    <p>ID=2748 <span class="attrs">path</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=2749 <span class="attrs">path</span></p>
+                  </div>
+                  <p>... 3 more (EXPAND_ID=2747)</p>
+                  <div class="block-element ">
+                    <p>ID=2753 <span class="attrs">path</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=2754 <span class="attrs">path</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=2755 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=2761 <span class="attrs">div,ul,li,a:  clickable = true; role = "list"; href = mailto:hola@reity.cl;</span></p>
+                <p>Recursos Tokeniza tu propiedad</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=2766 <span class="attrs">div,ul:  role = "list";</span></p>
+                <p>Sobre nosotros</p>
+                <div class="block-element clickable-element">
+                  <p>ID=2768 <span class="attrs">li,a:  clickable = true; href = /personas/;</span></p>
+                  <p>Nuestro equipo</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2771 <span class="attrs">li,a:  clickable = true; href = /marketplace/;</span></p>
+                  <p>Contacto</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2774 <span class="attrs">li,a:  clickable = true; href = https://reity.notion.site/Trabaja-en-Reity-ac44b70...;</span></p>
+                  <p>Trabaja con nosotros</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=2779 <span class="attrs">div,ul:  role = "list";</span></p>
+                <p>Legal</p>
+                <div class="block-element clickable-element">
+                  <p>ID=2781 <span class="attrs">li,a:  clickable = true; href = /terminos-y-condiciones/;</span></p>
+                  <p>Términos y condiciones</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2784 <span class="attrs">li,a:  clickable = true; href = https://reity.nyc3.cdn.digitaloceanspaces.com/TYC/...;</span></p>
+                  <p>Información para el inversionista</p>
+                </div>
+                <p>... 1 more (EXPAND_ID=2779)</p>
+                <div class="block-element clickable-element">
+                  <p>ID=2790 <span class="attrs">li,a:  clickable = true; href = https://reity.nyc3.digitaloceanspaces.com/Contrato...;</span></p>
+                  <p>Condiciones generales</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2793 <span class="attrs">li,a:  clickable = true; href = /anexos/;</span></p>
+                  <p>Anexos</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=2798 <span class="attrs">div,ul:  role = "list";</span></p>
+                <p>Denuncias</p>
+                <div class="block-element clickable-element">
+                  <p>ID=2800 <span class="attrs">li,a:  clickable = true; href = https://reity.buk.cl/cul_partner_complaint/tickets...;</span></p>
+                  <p>Canal de denuncias</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=2803 <span class="attrs">li,a:  clickable = true; href = mailto:hola@reity.cl;</span></p>
+                  <p>Mail consultas, reclamos y denuncias</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=2805 <span class="attrs">div</span></p>
+            <p>© 2023 Reity SPA. Derechos reservados. Los Dominicos 8630 Of. 806. Las Condes, Santiago, Chile. 🏡</p>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=2808 <span class="attrs">next-route-announcer</span></p>
+        <p>/marketplace/</p>
+      </div>
+      <div class="block-element clickable-element">
+        <p>ID=2814 <span class="attrs">div:  clickable = true; role = "button"; aria-label = "Open Intercom Messenger"; aria-live = "polite";</span></p>
+        <p>$24.000.000</p>
+        <div class="block-element clickable-element">
+          <p>ID=2817 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+        </div>
+        <div class="block-element clickable-element">
+          <p>ID=2820 <span class="attrs">div,svg,path:  clickable = true;</span></p>
+        </div>
+      </div>
+    </div>
+</html>
