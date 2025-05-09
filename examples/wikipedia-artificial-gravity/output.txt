@@ -1,0 +1,107 @@
+# Metadata
+Current Url: ...
+History:
+1. 2024-01-22 10:00:00 - https://www.google.com/search?q=chrome+extension+modularize
+2. 2024-01-22 09:00:00 - https://www.google.com/search?q=chrome+extension+modularize&sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...
+3. 2024-01-22 08:00:00 - https://www.google.com/search?q=chrome+extension+modularize&sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...
+
+Current Objective: To discover how to modularize a Chrome Extension
+Steps to Achieve Objective:
+1. (done) Search for "chrome extension modularize" on Google.
+2. (current) Analyze the search results to find relevant information on modularizing Chrome extensions.
+3. (pending) Summarize the findings and provide actionable steps or resources.
+4. (pending) Communicate the findings in a clear and concise manner.
+
+
+# Parsed Current HTML
+BODY[ID=0]
+  DIV,FORM,DIV[ID=8][role="search"]: "Accessibility links"
+    DIV,A,svg,path[ID=12][clickable=true][href=https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKE...][title="Go to Google Home"]
+    DIV[ID=13]
+      DIV[ID=14]
+        DIV,TEXTAREA[ID=16][clickable=true][aria-label="Search"][role="combobox"][value="chrome extension modularize"]: "chrome extension modularize"
+        DIV[ID=18]
+          DIV,SPAN,svg,path[ID=23][clickable=true][role="button"]
+          DIV,svg,path[ID=26][clickable=true][role="button"]
+          DIV,svg,path[ID=29][clickable=true][role="button"]
+      BUTTON,DIV,SPAN,svg,path[ID=34][clickable=true][type=submit]
+  DIV[ID=38]
+    DIV[ID=51][role="navigation"]: "Filters and topics"
+      DIV[ID=53][role="list"]
+        DIV,A[ID=55][clickable=true][role="link"]: "All"
+        DIV,A[ID=59][clickable=true][role="link"][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Images"
+        ... 4 more (EXPAND_ID=53)
+        DIV,A[ID=79][clickable=true][role="link"][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Web"
+        DIV,G-POPUP,DIV,SPAN,svg,path[ID=89][clickable=true][role="button"]: "More"
+      DIV,SPAN,svg,path[ID=95][clickable=true][role="button"]: "Tools"
+    DIV[ID=96]
+      DIV[ID=117]: "Search Results AI overview"
+        DIV[ID=120]
+          DIV[ID=122]
+            DIV,A[ID=129][clickable=true][aria-label="Learn more about generative AI. Opens in a new tab."][href=https://support.google.com/websearch?p=ai_overview...]: "Search Labs | AI Overview Learn more"
+            DIV,SPAN,svg,path[ID=141][clickable=true][role="button"]
+          DIV,UL[ID=189]: "To modularize a Chrome extension, you can leverage various techniques including ES6 modules, content scripts, and the Chrome runtime API . ES6 modules provide a way to organize your code into reusable components, while content scripts allow you to interact with web pages. The Chrome runtime API facilitates communication between different parts of your extension. You can also use build tools like Webpack or Browserify to manage dependencies and bundle your code."
+            LI[ID=190]
+              A[ID=191][clickable=true][href=https://stackoverflow.com/questions/14572448/how-d...][aria-label="How do you modularize your Chrome Applications with ..."]
+              DIV[ID=192]: "How do you modularize your Chrome Applications with ... 28 Jan 2013 — 4 Answers 4 · Excellent explanation. The question was focus on Google Chrome extensions which by nature have more then ... Stack Overflow"
+            LI[ID=212]
+              A[ID=213][clickable=true][href=https://stackoverflow.com/questions/43684452/is-it...][aria-label="Is it possible to require npm modules in a chrome extension"]
+              DIV[ID=214]: "Is it possible to require npm modules in a chrome extension"
+        DIV,SPAN,svg,path[ID=227][clickable=true][role="button"]: "Show more"
+      DIV[ID=229][role="main"]
+        DIV[ID=233]
+          DIV[ID=236]
+            DIV,SPAN,A[ID=241][clickable=true][href=https://stackoverflow.com/questions/14572448/how-d...]
+              BR[ID=244][clickable=true]: "How do you modularize your Chrome Applications with ..."
+              DIV,CITE[ID=253][clickable=true][role="text"]: "Stack Overflow 4 answers · 12 years ago"
+            DIV[ID=264]: "A technique that I've found works well is to create a separate bundle for each context (e.g. background, content, etc.). Here's an example directory structure: . ├── extension │ ├── js │ └── manifest.json ├── lib │ ├── background │ │ └── index.js │ ├── content │ │ └── index.js │ └── frame ..."
+              DIV,A[ID=268][clickable=true][href=https://stackoverflow.com/questions/77858366/is-it...]: "Is it possible for a Chrome Extension using the modules ... 1 answer 22 Jan 2024"
+              DIV,A[ID=285][clickable=true][href=https://stackoverflow.com/questions/48104433/how-t...]: "How to import ES6 modules in content script for ... 14 answers 4 Jan 2018"
+              DIV,A[ID=299][clickable=true][href=/search?q=chrome+extension+modularize+site:stackov...]: "More results from stackoverflow.com"
+          DIV[ID=304]
+            DIV,SPAN,A[ID=309][clickable=true][href=https://developer.chrome.com/docs/extensions/refer...]
+              BR[ID=312][clickable=true]: "Shared modules | Chrome Extensions"
+              DIV,CITE[ID=321][clickable=true][role="text"]: "Chrome for Developers https://developer.chrome.com › ... › Chrome Extensions"
+            DIV[ID=325]: "5 Jan 2015 — Shared Modules are permissionless collections of resources that can be shared between extensions. Common uses of Shared Modules are:"
+          ... 7 more (EXPAND_ID=233)
+          DIV[ID=640]
+            DIV,SPAN,A[ID=645][clickable=true][href=https://www.callstack.com/blog/how-to-build-a-chro...]
+              BR[ID=648][clickable=true]: "How to Build a Chrome Extension: A Step-by-Step Guide"
+              DIV,CITE[ID=657][clickable=true][role="text"]: "Callstack https://www.callstack.com › blog › how-to-build-a-chro..."
+            DIV[ID=661]: "20 Feb 2025 — This article serves as a comprehensive guide for creating a feature-rich Chrome extension from scratch. It walks through the entire process of building a Pomodoro timer extension with advanced functionalities like blocking sites, taking screenshots, adding side panels, and creating a settings page."
+          DIV[ID=677]
+            DIV,SPAN,A[ID=682][clickable=true][href=https://github.com/code-warrior/the-modular-grid...]
+              BR[ID=685][clickable=true]: "code-warrior/the-modular-grid: A Chrome extension that ..."
+              DIV,CITE[ID=694][clickable=true][role="text"]: "GitHub https://github.com › code-warrior › the-modular-grid"
+            DIV[ID=698]: "29 Jan 2017 — The Modular Grid — A Chrome Extension ... This extension provides a series of grid overlays in web pages so web authors can better implement design translations into web pages. Some key options include the ability to change column widths and colors, gutter widths, and baseline/leading distances."
+        DIV[ID=716]
+          DIV[ID=728]: "People also search for"
+            DIV[ID=729]
+              DIV,A,DIV,SPAN,svg,path[ID=747][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Chrome extension modularize reddit"
+              DIV,A,DIV,SPAN,svg,path[ID=765][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Chrome extension import module"
+              DIV,A,DIV,SPAN,svg,path[ID=783][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Chrome extension-cli"
+              DIV,A,DIV,SPAN,svg,path[ID=801][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Vite Chrome extension"
+            DIV[ID=802]
+              DIV,A,DIV,SPAN,svg,path[ID=820][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Chrome extension type'': module"
+              DIV,A,DIV,SPAN,svg,path[ID=837][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "chrome.extension.geturl is not a function"
+              DIV,A,DIV,SPAN,svg,path[ID=855][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Chrome Extension content script"
+              DIV,A,DIV,SPAN,svg,path[ID=873][clickable=true][href=/search?sca_esv=bf2c799dee4adccd&sxsrf=AHTn8zr7qYI...]: "Chrome extension web_accessible_resources"
+          DIV,TABLE,TBODY,TR[ID=879][role="presentation"]: "Page navigation"
+            TD[ID=880]
+            TD[ID=882]: "1"
+            ... 8 more (EXPAND_ID=879)
+            TD,A[ID=918][clickable=true][aria-label="Page 10"][href=/search?q=chrome+extension+modularize&sca_esv=bf2c...]: "10"
+            TD[ID=921][role="heading"]
+    DIV[ID=928][role="contentinfo"]: "Footer links"
+      DIV,SPAN,A[ID=937][clickable=true][href=https://www.google.com/search?q=chrome+extension+m...]: "Results are personalised - Try without personalisation"
+      DIV[ID=946]: "Italy"
+        DIV[ID=947]
+          A[ID=948][clickable=true][href=#...][role="button"]: "20131, Milan, Metropolitan City of Milan - Based on your places (Home)"
+          SPAN,G-DIALOG[ID=960]
+        UPDATE-LOCATION,DIV,SPAN,LOCATION-SNACKBAR-WITH-LEARN-MORE[ID=970][clickable=true][role="button"]: "- Update location"
+      DIV,SPAN[ID=975]
+        A[ID=976][clickable=true][href=https://support.google.com/websearch/?p=ws_results...]: "Help"
+        A[ID=978][clickable=true][href=#...]: "Send feedback"
+        A[ID=980][clickable=true][href=https://policies.google.com/privacy?hl=en-IT&fg=1...]: "Privacy"
+        A[ID=982][clickable=true][href=https://policies.google.com/terms?hl=en-IT&fg=1...]: "Terms"
+  DIV[ID=984]: "AI overview is ready"
