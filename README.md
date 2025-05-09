@@ -13,10 +13,10 @@ This repository contains a Chrome Extension that allows to parse any webpage and
     - `go_to`: Navigating to a URL
     - `go_back`: Going back to the previous page (First in history)
     - `click`: Clicking an element
-    - `write`: Writing into an element. This works for filling forms, input fields, or even selects and checkboxes (by writing the value of the option. This needs to be the exact value, not the label)
+    - `write`: Writing into an element. This works for filling forms, input fields, or even selects and checkboxes (by writing the value of the option)
     - `expand`: Expanding a node to see the missing information
     - `describe_image`: Used for describing an image if you think it is relevant for the step solution. Any node that has the attribute "src" can be selected by this action.
-    - `talk`: Talking to the user. You are the only one in control of the browser, so you can talk to the user and give them information about the current step. You can also ask for more information if needed.
+    - `talk`: Talking to the user. For giving them information about the current step, or for requesting more information if needed.
     - `no_action`: No action needed. This is used when the step was already solved and no further action is needed. 
   - `corrector.md`: An agent that checks if the current step was actually solved or not. It gets called once the `agent.md` returns that a step was solved. It receives the updated CNT after the action was executed, checks if the step was actually solved, and if not it returns a feedback into the `agent.md` to solve the step again.
   - `lookup.md`: An agent that finds out the ID of the relevant node for solving an action.
