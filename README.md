@@ -6,6 +6,20 @@ This repository contains a Chrome Extension that allows to parse any webpage and
 - `examples/`: Contains examples of the parsed HTML in optimized LLM format. Each example is a folder containing the following files:
   - `README.md`: A description of the example, its contents and links to the source and parsed HTML.
   - `output.html`: The parsed CNT in HTML format (non-LLM format), used to visualize the representation of the tree in a more human-readable way.
+- `lib/`: Contains the source code of the Chrome Extension
+- `prompts/`: Contains a set of prompts used for testing the CNT into different AI Agents. The agents tested are the following:
+  - `operator.md`: An operator that cares of talking to the user, understanding its needs and objectives, requiring the information needed to solve the objective and creating a plan to achieve it.
+  - `agent.md`: An agent that solves the current step of the plan. It receives the CNT with some metadata. It returns one action to execute in order to solve the step, and a boolean indicating if the step was solved or not. The actions can be:
+    - `go_to`: Navigating to a URL
+    - `go_back`: Going back to the previous page (First in history)
+    - `click`: Clicking an element
+    - `write`: Writing into an element. This works for filling forms, input fields, or even selects and checkboxes (by writing the value of the option. This needs to be the exact value, not the label)
+    - `expand`: Expanding a node to see the missing information
+    - `describe_image`: Used for describing an image if you think it is relevant for the step solution. Any node that has the attribute "src" can be selected by this action.
+    - `talk`: Talking to the user. You are the only one in control of the browser, so you can talk to the user and give them information about the current step. You can also ask for more information if needed.
+    - `no_action`: No action needed. This is used when the step was already solved and no further action is needed. 
+  - `corrector.md`: An agent that checks if the current step was actually solved or not. It gets called once the `agent.md` returns that a step was solved. It receives the updated CNT after the action was executed, checks if the step was actually solved, and if not it returns a feedback into the `agent.md` to solve the step again.
+  - `lookup.md`: An agent that finds out the ID of the relevant node for solving an action.
 
 # CNT Rules
 The CNT format is a simplified version of the HTML DOM, where each node is represented in a tree structure. The rules for creating a CNT are as follows:
