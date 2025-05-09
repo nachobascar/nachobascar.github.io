@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .block-element {
+        display: block; border-radius: 0.5rem; text-align: start;
+        padding: 0.5rem; margin: 0.5rem; background-color: #f0f0f0;
+        border: 1px solid #ccc; font-size: 0.8rem;
+        font-family: Arial, sans-serif;
+        text-wrap: pretty;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .clickable-element {
+        cursor: pointer; background-color: #e0f7fa;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+      .attrs {
+        font-size: 0.8rem;
+        color: #555;
+      }
+    </style>
+  </head>
+    <div class="block-element ">
+      <p>ID=0 <span class="attrs">body</span></p>
+      <div class="block-element ">
+        <p>ID=1 <span class="attrs">div</span></p>
+        <div class="block-element ">
+          <p>ID=2 <span class="attrs">img:  src = /assets/demo-sites/mars/js/out;</span></p>
+        </div>
+        <div class="block-element ">
+          <p>ID=3 <span class="attrs">img:  src = /assets/demo-sites/mars/js/saved_resource;</span></p>
+        </div>
+        <div class="block-element ">
+          <p>ID=4 <span class="attrs">img:  src = /assets/demo-sites/mars/js/seg;</span></p>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=14 <span class="attrs">div</span></p>
+        <p>This web page is for demonstration purposes, to show common accessibility errors.</p>
+        <div class="block-element ">
+          <p>ID=15 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=17 <span class="attrs">nav,ul</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=19 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=add_trip.html;</span></p>
+              <p>Add a trip</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=24 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=find_pass.html;</span></p>
+              <p>Find a pass</p>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=29 <span class="attrs">div,form</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=30 <span class="attrs">input:  clickable = true; type = text; placeholder = "search";</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=31 <span class="attrs">input:  clickable = true; type = submit;</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=34 <span class="attrs">div,nav,ul</span></p>
+          <div class="block-element ">
+            <p>ID=36 <span class="attrs">li,div</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=38 <span class="attrs">div,a:  clickable = true; href = mars2.html?a=facebook_login.html;</span></p>
+              <p>Login</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=44 <span class="attrs">div,a:  clickable = true; href = mars2.html?a=sign_in;</span></p>
+              <p>or Sign In</p>
+            </div>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=46 <span class="attrs">li:  clickable = true;</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=47 <span class="attrs">a:  clickable = true; href = mars2.html?a=cart;</span></p>
+              <p>My Cart $0.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=53 <span class="attrs">div</span></p>
+        <div class="block-element clickable-element">
+          <p>ID=56 <span class="attrs">div,a:  clickable = true; href = demo/mars/#; title = "MarsCommuter®";</span></p>
+        </div>
+        <div class="block-element ">
+          <p>ID=62 <span class="attrs">div,nav,ul</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=64 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=travel_agents;</span></p>
+            <p>Travel Agents</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=66 <span class="attrs">li:  clickable = true;</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=67 <span class="attrs">a:  clickable = true; href = javascript:;;</span></p>
+              <p>Your country</p>
+            </div>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=71 <span class="attrs">li:  clickable = true;</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=72 <span class="attrs">a:  clickable = true; href = javascript:;;</span></p>
+              <p>Your language</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=75 <span class="attrs">div</span></p>
+        <div class="block-element ">
+          <p>ID=78 <span class="attrs">div,nav,ul</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=80 <span class="attrs">li,a:  clickable = true; href = demo/mars/#;</span></p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=83 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=send_me_to_mars;</span></p>
+            <p>Send me to Mars!</p>
+          </div>
+          <p>... 1 more (EXPAND_ID=78)</p>
+          <div class="block-element clickable-element">
+            <p>ID=89 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=things_to_do;</span></p>
+            <p>Things to Do</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=92 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=mars_map;</span></p>
+            <p>Mars Map</p>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=96 <span class="attrs">div,nav,ul</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=98 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=rockets;</span></p>
+            <p>Rockets</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=101 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=deals;</span></p>
+            <p>Deals</p>
+          </div>
+          <p>... 1 more (EXPAND_ID=96)</p>
+          <div class="block-element clickable-element">
+            <p>ID=107 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=about_us;</span></p>
+            <p>About Us</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=110 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=help;</span></p>
+            <p>Help!</p>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=112 <span class="attrs">section</span></p>
+        <div class="block-element ">
+          <p>ID=114 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=123 <span class="attrs">div</span></p>
+            <p>Destination Mars A trip to Mars starts in your imagination. Are you bold enough, brave enough, foolish enough? We are. You belong on Mars with fools like us. Most of us don't bite. Much.</p>
+            <div class="block-element ">
+              <p>ID=124 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=125 <span class="attrs">a:  clickable = true; href = mars2.html?a=be_bold;</span></p>
+                <p>Be Bold...</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=132 <span class="attrs">p,br</span></p>
+                <p>Step out of your comfort zone, and into a rocket with enough fuel to blast a Manhattan-sized crater if it explodes. But it won't. Probably.</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=136 <span class="attrs">div,ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=138 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=why_marscommuter;</span></p>
+                  <p>Why MarsCommuter?</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=143 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=maps_and_guides;</span></p>
+                  <p>Maps & Guides</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=148 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=ticket_info;</span></p>
+                  <p>Ticket Info</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=153 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=154 <span class="attrs">a:  clickable = true; href = mars2.html?a=countdown;</span></p>
+                <p>Countdown...</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=161 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=last_will;</span></p>
+                <p>If you're serious about traveling to Mars - really serious - then prepare your last will and testament , and book a trip!</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=167 <span class="attrs">div,ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=169 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=book_tickets;</span></p>
+                  <p>Book Tickets</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=174 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=mars_passes;</span></p>
+                  <p>Mars Passes</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=179 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=seek_counseling;</span></p>
+                  <p>Seek counseling</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=184 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=185 <span class="attrs">a:  clickable = true; href = mars2.html?a=blast_off;</span></p>
+                <p>Blast Off!</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=192 <span class="attrs">p,br</span></p>
+                <p>Expect violent turbulence, bone-crushing g-forces, muscle atrophy, and certain death (hey, everyone's death is certain at some point, right?).</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=196 <span class="attrs">div,ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=198 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=;</span></p>
+                  <p>MarsMobile app</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=203 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=fly_at_own_risk;</span></p>
+                  <p>Fly at your own risk</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=208 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=contact_us;</span></p>
+                  <p>Contact Us</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=218 <span class="attrs">div,ul</span></p>
+            <p>Special Offers</p>
+            <div class="block-element ">
+              <p>ID=219 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=221 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=crater_adventure; src = /assets/demo-sites/mars/images/mars-spaceman.jpg;</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=222 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=224 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=crater_adventure;</span></p>
+                  <p>10% off Crater Adventure</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=228 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=crater_adventure;</span></p>
+                  <p>Book select MarStar Crater tickets and enjoy 10% off the Crater Adventures Pass. Safety not guaranteed. Book your MarStar Crater Package today to save!</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=230 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=232 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=ice_cream; src = /assets/demo-sites/mars/images/space-station.jpg; alt = "icecream.jpg ";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=233 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=235 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=ice_cream;</span></p>
+                  <p>Free Astronaut Ice Cream</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=239 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=ice_cream;</span></p>
+                  <p>Spend an extra 3 months in orbit around Mars in our newly-remodelled MarsPod and get a free package of freeze-wrapped dehydrated astronaut ice cream. Get your free dehydrated ice cream!</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=241 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=243 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=low_price_guarantee; src = /assets/demo-sites/mars/images/mars-lander.jpg; alt = "Mars Lander";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=244 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=246 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=low_price_guarantee;</span></p>
+                  <p>Lowest Price Guarantee</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=250 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=low_price_guarantee;</span></p>
+                  <p>If within 24 hours of booking with us you find a lower online published price for the exact same rocket ticket to Mars, we buy you a milkshake, then send you on a one-way trip to the Sun. Find out how this deal works.</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=254 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=256 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=send_kids_to_mars; src = /assets/demo-sites/mars/images/kids-space.jpg; alt = "Kids in space suits ";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=257 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=259 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=send_kids_to_mars;</span></p>
+                  <p>Send Your Kids to Mars!</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=263 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=send_kids_to_mars;</span></p>
+                  <p>Book a first class one-way ticket for 5 kids, at the cost of 4! No parent or guardian required. Don't worry, they'll be fine... Send your kids to mars</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=265 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=267 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=wookie; src = /assets/demo-sites/mars/images/wookie.jpg; alt = "Wookie";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=268 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=270 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=wookie;</span></p>
+                  <p>Fly with a Wookie</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=274 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=wookie;</span></p>
+                  <p>Fly with a wookie! Limited time offer! Or would you rather kiss a Wookie? We can arrange that. (Can someone move this walking carpet out of my way?) Fly with a Wookie!</p>
+                </div>
+              </div>
+            </div>
+            <p>... 10 more (EXPAND_ID=218)</p>
+            <div class="block-element ">
+              <p>ID=390 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=392 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=ice_cream; src = /assets/demo-sites/mars/images/space-station.jpg; alt = "icecream.jpg ";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=393 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=395 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=ice_cream;</span></p>
+                  <p>Free Astronaut Ice Cream</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=399 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=ice_cream;</span></p>
+                  <p>Spend an extra 3 months in orbit around Mars in our newly-remodelled MarsPod and get a free package of freeze-wrapped dehydrated astronaut ice cream. Get your free dehydrated ice cream!</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=401 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=403 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=low_price_guarantee; src = /assets/demo-sites/mars/images/mars-lander.jpg; alt = "Mars Lander";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=404 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=406 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=low_price_guarantee;</span></p>
+                  <p>Lowest Price Guarantee</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=410 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=low_price_guarantee;</span></p>
+                  <p>If within 24 hours of booking with us you find a lower online published price for the exact same rocket ticket to Mars, we buy you a milkshake, then send you on a one-way trip to the Sun. Find out how this deal works.</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=414 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=416 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=send_kids_to_mars; src = /assets/demo-sites/mars/images/kids-space.jpg; alt = "Kids in space suits ";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=417 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=419 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=send_kids_to_mars;</span></p>
+                  <p>Send Your Kids to Mars!</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=423 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=send_kids_to_mars;</span></p>
+                  <p>Book a first class one-way ticket for 5 kids, at the cost of 4! No parent or guardian required. Don't worry, they'll be fine... Send your kids to mars</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=425 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=427 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=wookie; src = /assets/demo-sites/mars/images/wookie.jpg; alt = "Wookie";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=428 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=430 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=wookie;</span></p>
+                  <p>Fly with a Wookie</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=434 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=wookie;</span></p>
+                  <p>Fly with a wookie! Limited time offer! Or would you rather kiss a Wookie? We can arrange that. (Can someone move this walking carpet out of my way?) Fly with a Wookie!</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=436 <span class="attrs">li</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=438 <span class="attrs">a,img:  clickable = true; href = mars2.html?a=stay_connected; src = /assets/demo-sites/mars/images/global-free-days.jpg; alt = "Martian sunrise.";</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=439 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=441 <span class="attrs">h3,a:  clickable = true; href = mars2.html?a=stay_connected;</span></p>
+                  <p>Get Radio on Uranus</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=445 <span class="attrs">p,a:  clickable = true; href = mars2.html?a=stay_connected;</span></p>
+                  <p>All of our packages come with radio connectivity to the far reaches of the solar system. Yup, you too can get Justin Bieber on Uranus. Find out about radio connectivity today.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=449 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=450 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=456 <span class="attrs">div,form,fieldset</span></p>
+              <p>Let the Adventure Begin!</p>
+              <div class="block-element ">
+                <p>ID=457 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=458 <span class="attrs">input:  clickable = true; type = radio; value = "0"; checked = true;</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=459 <span class="attrs">label:  clickable = true;</span></p>
+                  <p>Find Fares & Schedules</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=461 <span class="attrs">input:  clickable = true; type = radio; value = "1";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=462 <span class="attrs">label:  clickable = true;</span></p>
+                  <p>MarsCommuter Passes</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=464 <span class="attrs">input:  clickable = true; type = radio; value = "2";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=465 <span class="attrs">label:  clickable = true;</span></p>
+                  <p>MarsCommuter Reservations</p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=467 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=468 <span class="attrs">input:  clickable = true; type = radio; value = "4";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=469 <span class="attrs">label:  clickable = true;</span></p>
+                  <p>Find Activities</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=471 <span class="attrs">input:  clickable = true; type = radio; value = "3";</span></p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=472 <span class="attrs">label:  clickable = true;</span></p>
+                  <p>Book a Hotel</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=476 <span class="attrs">div,form</span></p>
+              <div class="block-element ">
+                <p>ID=479 <span class="attrs">div</span></p>
+                <div class="block-element ">
+                  <p>ID=482 <span class="attrs">div</span></p>
+                  <p>Book your Trip</p>
+                  <div class="block-element ">
+                    <p>ID=483 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=484 <span class="attrs">input:  clickable = true; type = radio; value = "0"; checked = true;</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=485 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>One-Way</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=487 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=488 <span class="attrs">input:  clickable = true; type = radio; value = "1";</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=489 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>Round-Trip</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=491 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=492 <span class="attrs">input:  clickable = true; type = radio; value = "2";</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=493 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>Multi-Planet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=497 <span class="attrs">div</span></p>
+                  <div class="block-element ">
+                    <p>ID=498 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=499 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>From:</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=501 <span class="attrs">input:  clickable = true; type = text; role = "textbox"; aria-autocomplete = "list"; aria-haspopup = "true";</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=502 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=503 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>To:</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=505 <span class="attrs">input:  clickable = true; type = text; role = "textbox"; aria-autocomplete = "list"; aria-haspopup = "true";</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=506 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=507 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>Departure Date</p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=509 <span class="attrs">input:  clickable = true; placeholder = "mm/dd/yyyy";</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=511 <span class="attrs">button,img:  clickable = true; type = button; src = /assets/demo-sites/mars/images/calendar.png; alt = "..."; title = "...";</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=512 <span class="attrs">button:  clickable = true; type = button;</span></p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=514 <span class="attrs">span,select:  value = "12";</span></p>
+                    <p>option: "12 am"</p>
+                    <p>option: "01 am"</p>
+                    <p>option: "02 am"</p>
+                    <p>option: "03 am"</p>
+                    <p>option: "04 am"</p>
+                    <p>option: "05 am"</p>
+                    <p>option: "06 am"</p>
+                    <p>option: "07 am"</p>
+                    <p>option: "08 am"</p>
+                    <p>option: "09 am"</p>
+                    <p>option: "10 am"</p>
+                    <p>option: "11 am"</p>
+                    <p>option: "12 pm"</p>
+                    <p>option: "01 pm"</p>
+                    <p>option: "02 pm"</p>
+                    <p>option: "03 pm"</p>
+                    <p>option: "04 pm"</p>
+                    <p>option: "05 pm"</p>
+                    <p>option: "06 pm"</p>
+                    <p>option: "07 pm"</p>
+                    <p>option: "08 pm"</p>
+                    <p>option: "09 pm"</p>
+                    <p>option: "10 pm"</p>
+                    <p>option: "11 pm"</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=516 <span class="attrs">span,a:  clickable = true;</span></p>
+                    <p>Add Another Trip</p>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=519 <span class="attrs">div</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=522 <span class="attrs">span,a:  clickable = true;</span></p>
+                    <p>Are you traveling with a MarsElite Pass ?</p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=525 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=526 <span class="attrs">input:  clickable = true; type = radio; value = "0";</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=527 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>Yes</p>
+                    </div>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=529 <span class="attrs">span</span></p>
+                    <div class="block-element clickable-element">
+                      <p>ID=530 <span class="attrs">input:  clickable = true; type = radio; value = "1"; checked = true;</span></p>
+                    </div>
+                    <div class="block-element clickable-element">
+                      <p>ID=531 <span class="attrs">label:  clickable = true;</span></p>
+                      <p>No</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=535 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=539 <span class="attrs">div,a:  clickable = true; href = mars2.html?a=;</span></p>
+                  <p>Who Is Traveling?</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=540 <span class="attrs">div</span></p>
+                  <div class="block-element ">
+                    <p>ID=546 <span class="attrs">div,span,select:  value = "0";</span></p>
+                    <p>Traveler</p>
+                    <p>option: "Adult (26+)"</p>
+                    <p>option: "Youth (12-25)"</p>
+                    <p>option: "Child (4-11)"</p>
+                    <p>option: "Senior (60+)"</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=548 <span class="attrs">div,a:  clickable = true;</span></p>
+                    <p>Add A Traveler</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=554 <span class="attrs">div,input:  clickable = true; type = submit; value = "Search";</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=561 <span class="attrs">div</span></p>
+            <p>Life was possible on Mars</p>
+            <div class="block-element clickable-element">
+              <p>ID=562 <span class="attrs">a:  clickable = true; href = http://www.youtube.com/embed/OagLGti_hTE?controls=...;</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=563 <span class="attrs">a:  clickable = true; href = http://www.youtube.com/embed/oC31pqk9sak?controls=...;</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=564 <span class="attrs">a:  clickable = true; href = http://www.youtube.com/embed/JgMXPXdqJn8?controls=...;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=567 <span class="attrs">div</span></p>
+        <div class="block-element ">
+          <p>ID=571 <span class="attrs">div,ul</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=581 <span class="attrs">li,a,img:  clickable = true; href = mars2.html?a=marscommuter; src = /assets/demo-sites/mars/images/gplus-32.png; alt = "Google+";</span></p>
+            <p>MarsCommuter</p>
+          </div>
+          <div class="block-element ">
+            <p>ID=582 <span class="attrs">li</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=583 <span class="attrs">a:  clickable = true; href = mars2.html?a=; title = "MarsCommuter iPhone App";</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=586 <span class="attrs">span,a:  clickable = true; href = mars2.html?a=; title = "Mars Commuter iPhone App";</span></p>
+              <p>Mars iPhone App</p>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=588 <span class="attrs">li</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=589 <span class="attrs">a:  clickable = true; href = mars2.html?a=join_conversation; title = "Join the Conversation";</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=592 <span class="attrs">span,a:  clickable = true; href = mars2.html?a=; title = "Join the Conversation";</span></p>
+              <p>Join the conversation and Interact with fellow travelers and MarsCommuter staff in our online community.</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=595 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=596 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=599 <span class="attrs">nav</span></p>
+              <p>Book Your Trip</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=600 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=604 <span class="attrs">li,a,br:  clickable = true; href = mars2.html?a=fares_and_schedules;</span></p>
+                <p>Find Fares & Schedules</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=606 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=find_mars_passes;</span></p>
+                <p>Find Mars Passes</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=609 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=find_activities;</span></p>
+                <p>Find Activities</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=612 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=book_reservations;</span></p>
+                <p>Book Reservations</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=617 <span class="attrs">li,a,br:  clickable = true; href = mars2.html?a=view_rocket_pass_listing;</span></p>
+                <p>View Rocket Pass Listing</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=618 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=621 <span class="attrs">nav</span></p>
+              <p>Mars Shuttles</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=622 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=624 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=marstar;</span></p>
+                <p>MarsStar</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=627 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=blast_off_uranus;</span></p>
+                <p>Blast off Uranus</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=630 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=red_planet_janet;</span></p>
+                <p>Red Planet Janet</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=633 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=the_martianic;</span></p>
+                <p>The Martianic</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=636 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=hal;</span></p>
+                <p>Hal</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=638 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=641 <span class="attrs">nav</span></p>
+              <p>Mars Tourist Passes</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=642 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=644 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=polar_cap_pass;</span></p>
+                <p>Polar Cap Pass</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=647 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=greater_crater_pass;</span></p>
+                <p>Greater Crater Pass</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=650 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=orbital_pass;</span></p>
+                <p>Orbital Pass</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=653 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=orbital_select_pass;</span></p>
+                <p>Orbital Select Pass</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=656 <span class="attrs">li,a:  clickable = true; href = mars2.html?amulti_planet_pass=;</span></p>
+                <p>Multi-Planet Pass</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=658 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=661 <span class="attrs">nav</span></p>
+              <p>Mars Adventures</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=662 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=664 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=martian_canali_quest;</span></p>
+                <p>Martian Canali Quest</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=667 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=nanedi_valles_hiking_treks;</span></p>
+                <p>Nanedi Valles Hiking Treks</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=670 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=phobos_observatory;</span></p>
+                <p>Phobos observatory</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=673 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=?paragliding_over_gusev_crater;</span></p>
+                <p>Paragliding over Gusev Crater</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=676 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=mars_dust_wrestling;</span></p>
+                <p>Mars dust wrestling</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=678 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=681 <span class="attrs">nav</span></p>
+              <p>FAQs</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=682 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=684 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=track_flight;</span></p>
+                <p>Track Flight</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=687 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=exchanges_refunds;</span></p>
+                <p>Exchanges & Refunds</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=690 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=e_tickets;</span></p>
+                <p>E-tickets</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=693 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=delivery_options;</span></p>
+                <p>Delivery Options</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=696 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=help;</span></p>
+                <p>Help</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=698 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=701 <span class="attrs">nav</span></p>
+              <p>Connect With Us</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=702 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=704 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=contact_us;</span></p>
+                <p>Contact Us</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=707 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=about_us;</span></p>
+                <p>About Us</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=710 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=feedback;</span></p>
+                <p>Feedback</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=713 <span class="attrs">li,a:  clickable = true; href = mars2.html?a=our_blog;</span></p>
+                <p>Our Blog</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=715 <span class="attrs">li</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=716 <span class="attrs">a:  clickable = true; href = mars2.html?a=mobile_site;</span></p>
+                  <p>Mobile Site</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=719 <span class="attrs">a:  clickable = true; href = mars2.html?a=iphone_app;</span></p>
+                  <p>/ iPhone App</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=722 <span class="attrs">li,a:  clickable = true; href = https://media.dequeuniversity.com/en/docs/demo/mar...;</span></p>
+                <p>Mars Info by NASA</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=725 <span class="attrs">li,a:  clickable = true; href = https://media.dequeuniversity.com/en/docs/demo/mar...;</span></p>
+                <p>Humans to Mars Report</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=727 <span class="attrs">div</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=729 <span class="attrs">a:  clickable = true; href = mars2.html?a=tersm_and_conditions;</span></p>
+            <p>Copyright © Mars Commuter Express, Inc. All Rights Reserved. | Mars Commuter Express Terms and Conditions</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=732 <span class="attrs">a:  clickable = true; href = mars2.html?a=privacy_policy;</span></p>
+            <p>| Privacy Policy</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=735 <span class="attrs">a:  clickable = true; href = mars2.html?asite_map=;</span></p>
+            <p>| Site Map</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</html>
