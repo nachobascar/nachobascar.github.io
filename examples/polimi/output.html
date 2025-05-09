@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .block-element {
+        display: block; border-radius: 0.5rem; text-align: start;
+        padding: 0.5rem; margin: 0.5rem; background-color: #f0f0f0;
+        border: 1px solid #ccc; font-size: 0.8rem;
+        font-family: Arial, sans-serif;
+        text-wrap: pretty;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .clickable-element {
+        cursor: pointer; background-color: #e0f7fa;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+      .attrs {
+        font-size: 0.8rem;
+        color: #555;
+      }
+    </style>
+  </head>
+    <div class="block-element ">
+      <p>ID=2 <span class="attrs">body,div</span></p>
+      <div class="block-element clickable-element">
+        <p>ID=3 <span class="attrs">a:  clickable = true; href = #page-content;</span></p>
+        <p>Skip to main content</p>
+      </div>
+      <div class="block-element clickable-element">
+        <p>ID=6 <span class="attrs">a:  clickable = true; href = #page-footer;</span></p>
+        <p>Skip to page footer</p>
+      </div>
+      <div class="block-element ">
+        <p>ID=9 <span class="attrs">header</span></p>
+        <div class="block-element ">
+          <p>ID=12 <span class="attrs">section,div</span></p>
+          <div class="block-element ">
+            <p>ID=13 <span class="attrs">ul</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=15 <span class="attrs">li,a:  clickable = true; href = /; title = "Italiano";</span></p>
+              <p>IT</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=19 <span class="attrs">li,a:  clickable = true; href = /en/; title = "English";</span></p>
+              <p>EN</p>
+            </div>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=23 <span class="attrs">div,a:  clickable = true; href = https://aunicalogin.polimi.it/aunicalogin/getservi...; title = "Accedi ai Servizi online";</span></p>
+            <p>Accedi ai Servizi online</p>
+          </div>
+        </div>
+        <div class="block-element clickable-element">
+          <p>ID=28 <span class="attrs">div,p,a:  clickable = true; href = #main-content-anchor; title = "Skip to Content (Press Enter)";</span></p>
+          <p>Skip to Content (Press Enter)</p>
+        </div>
+        <div class="block-element ">
+          <p>ID=32 <span class="attrs">section,div</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=35 <span class="attrs">div,a,img:  clickable = true; href = /; title = "Home"; alt = "Politecnico di Milano"; src = /_assets/4b51f00386267395f41e0940abbcd656/Images/logo.svg;</span></p>
+          </div>
+          <div class="block-element ">
+            <p>ID=38 <span class="attrs">div,nav,ul:  aria-label = "Main navigation";</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=40 <span class="attrs">li,button:  clickable = true; type = button; aria-haspopup = "true"; aria-expanded = "false";</span></p>
+              <p>Il Politecnico</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=45 <span class="attrs">li,button:  clickable = true; type = button; aria-haspopup = "true"; aria-expanded = "false";</span></p>
+              <p>Formazione</p>
+            </div>
+            <p>... 4 more (EXPAND_ID=38)</p>
+            <div class="block-element clickable-element">
+              <p>ID=70 <span class="attrs">li,button:  clickable = true; type = button; title = "Persone"; aria-haspopup = "true"; aria-expanded = "false";</span></p>
+              <p>Persone</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=75 <span class="attrs">li,a:  clickable = true; href = /risultato-ricerca; title = "Cerca in questo sito"; aria-label = "Cerca in questo sito"; aria-current = "false";</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element clickable-element">
+        <p>ID=77 <span class="attrs">div,a:  clickable = true;</span></p>
+      </div>
+      <div class="block-element ">
+        <p>ID=78 <span class="attrs">main</span></p>
+        <div class="block-element ">
+          <p>ID=80 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=83 <span class="attrs">div,video,source:  src = /fileadmin/asset/video/1_didattica.mp4; type = video/mp4;</span></p>
+          </div>
+          <div class="block-element ">
+            <p>ID=85 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=86 <span class="attrs">h1</span></p>
+              <div class="block-element ">
+                <p>ID=88 <span class="attrs">br</span></p>
+                <p>Technology</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=89 <span class="attrs">text</span></p>
+                <p>for humanity</p>
+              </div>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=99 <span class="attrs">div,p,a:  clickable = true; href = /il-politecnico;</span></p>
+              <p>Politecnico di Milano Dal 1863, il più grande ateneo scientifico-tecnologico italiano, tra rigore scientifico e creatività Scopri il Politecnico</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=101 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=110 <span class="attrs">div</span></p>
+            <p>In evidenza</p>
+            <div class="block-element ">
+              <p>ID=112 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=113 <span class="attrs">picture</span></p>
+                <div class="block-element ">
+                  <p>ID=114 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=115 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=116 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=117 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=118 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=119 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=120 <span class="attrs">img:  src = data:image/gif;base64...;</span></p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=132 <span class="attrs">div,a:  clickable = true; href = /formazione;</span></p>
+                <p>Corsi Moduli didattici innovativi Un panorama completo di corsi di studio, in italiano e in inglese, con un taglio multidisciplinare Esplora</p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=136 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=137 <span class="attrs">picture</span></p>
+                <div class="block-element ">
+                  <p>ID=138 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=139 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=140 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=141 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=142 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=143 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=144 <span class="attrs">img:  src = data:image/gif;base64...;</span></p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=155 <span class="attrs">div,a:  clickable = true; href = /ricerca/sport-e-tecnologia;</span></p>
+                <p>Ricerca Sport e tecnologia Un binomio fondato sulla sfida continua a superare i propri limiti Esplora</p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=159 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=160 <span class="attrs">picture</span></p>
+                <div class="block-element ">
+                  <p>ID=161 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=162 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=163 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=164 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=165 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=166 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=167 <span class="attrs">img:  src = data:image/gif;base64...;</span></p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=178 <span class="attrs">div,a:  clickable = true; href = /sviluppo-sostenibile;</span></p>
+                <p>Sviluppo sostenibile Il mondo di domani Il nostro impegno per una società migliore Esplora</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=189 <span class="attrs">div</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=190 <span class="attrs">a:  clickable = true;</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=198 <span class="attrs">a:  clickable = true;</span></p>
+              <p>Entra nella community della prima Università d'Italia Scopri come entrare a far parte del Politecnico di Milano</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=199 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=207 <span class="attrs">div,p,a:  clickable = true; href = /futuri-studenti;</span></p>
+                <p>Futuri studenti</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=217 <span class="attrs">div,p,a:  clickable = true; href = /lavora-con-noi;</span></p>
+                <p>Futuri colleghi</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=225 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=226 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=227 <span class="attrs">a:  clickable = true;</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=231 <span class="attrs">div</span></p>
+                <div class="block-element ">
+                  <p>ID=232 <span class="attrs">picture</span></p>
+                  <div class="block-element ">
+                    <p>ID=233 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=234 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=235 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=236 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=237 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=238 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=239 <span class="attrs">img:  src = data:image/gif;base64...;</span></p>
+                  </div>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=250 <span class="attrs">div,a:  clickable = true; href = /il-politecnico/il-politecnico-nella-storia;</span></p>
+                  <p>Tradizione e innovazione Una passione per la tecnologia che dura da 160 anni Dal 1863 contribuiamo allo sviluppo del Paese Scopri la nostra storia</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=253 <span class="attrs">a:  clickable = true;</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=254 <span class="attrs">div</span></p>
+                <div class="block-element ">
+                  <p>ID=265 <span class="attrs">div</span></p>
+                  <p>Le sedi del Politecnico</p>
+                  <div class="block-element clickable-element">
+                    <p>ID=272 <span class="attrs">div,p,a:  clickable = true; href = /il-politecnico/governance/strutture/sedi/milano-l...;</span></p>
+                    <p>Milano Leonardo</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=280 <span class="attrs">div,p,a:  clickable = true; href = /il-politecnico/governance/strutture/sedi/milano-b...;</span></p>
+                    <p>Milano Bovisa</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=288 <span class="attrs">div,p,a:  clickable = true; href = https://www.polo-cremona.polimi.it;</span></p>
+                    <p>Cremona</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=296 <span class="attrs">div,p,a:  clickable = true; href = https://www.polo-lecco.polimi.it;</span></p>
+                    <p>Lecco</p>
+                  </div>
+                </div>
+                <div class="block-element ">
+                  <p>ID=298 <span class="attrs">div</span></p>
+                  <div class="block-element clickable-element">
+                    <p>ID=305 <span class="attrs">div,p,a:  clickable = true; href = https://www.polo-mantova.polimi.it;</span></p>
+                    <p>Mantova</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=313 <span class="attrs">div,p,a:  clickable = true; href = https://www.polo-piacenza.polimi.it;</span></p>
+                    <p>Piacenza</p>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=321 <span class="attrs">div,p,a:  clickable = true; href = /il-politecnico/progetti-di-ateneo/joint-school-of...;</span></p>
+                    <p>Xi’an</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=323 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=324 <span class="attrs">a:  clickable = true;</span></p>
+              </div>
+              <div class="block-element ">
+                <p>ID=329 <span class="attrs">div</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=341 <span class="attrs">div,a:  clickable = true; href = /il-politecnico/governance;</span></p>
+                  <p>Governance Donatella Sciuto, Rettrice Uniti nella diversità per una crescita sostenibile Esplora</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=345 <span class="attrs">div,picture</span></p>
+                  <div class="block-element ">
+                    <p>ID=346 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=347 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=348 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=349 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=350 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=351 <span class="attrs">source</span></p>
+                  </div>
+                  <div class="block-element ">
+                    <p>ID=352 <span class="attrs">img:  src = data:image/gif;base64...;</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=386 <span class="attrs">div,a:  clickable = true; href = /il-politecnico/i-nostri-numeri;</span></p>
+                <p>Ranking internazionali Un’eccellenza in Italia e nel mondo 1° In Italia 111° Nel mondo Numeri</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=398 <span class="attrs">div</span></p>
+            <p>Le scuole</p>
+            <div class="block-element clickable-element">
+              <p>ID=407 <span class="attrs">div,a:  clickable = true; href = https://www.auic.polimi.it;</span></p>
+              <p>Scuola di Architettura Urbanistica Ingegneria delle Costruzioni Esplora</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=418 <span class="attrs">div,a:  clickable = true; href = https://www.design.polimi.it;</span></p>
+              <p>Scuola del Design Esplora</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=429 <span class="attrs">div,a:  clickable = true; href = https://www.ingcat.polimi.it;</span></p>
+              <p>Scuola di Ingegneria Civile, Ambientale e Territoriale Esplora</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=440 <span class="attrs">div,a:  clickable = true; href = https://www.ingindinf.polimi.it;</span></p>
+              <p>Scuola di Ingegneria Industriale e dell'Informazione Esplora</p>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=446 <span class="attrs">div</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=456 <span class="attrs">div,a:  clickable = true; href = /il-politecnico/relazioni-internazionali; role = "button";</span></p>
+              <p>Collaborazioni Partnership internazionali Orgogliosamente parte di una rete internazionale di più di 40 enti e istituzioni. Scopri tutte</p>
+            </div>
+            <div class="block-element ">
+              <p>ID=460 <span class="attrs">div</span></p>
+              <div class="block-element ">
+                <p>ID=462 <span class="attrs">div,picture</span></p>
+                <div class="block-element ">
+                  <p>ID=463 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=464 <span class="attrs">img:  src = /fileadmin/asset/logo/banner-enhance-logo.png;</span></p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=466 <span class="attrs">div,picture</span></p>
+                <div class="block-element ">
+                  <p>ID=467 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=468 <span class="attrs">img:  src = /fileadmin/asset/logo/banner-alliance-tech-logo.png;</span></p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=470 <span class="attrs">div,picture</span></p>
+                <div class="block-element ">
+                  <p>ID=471 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=472 <span class="attrs">img:  src = /fileadmin/asset/logo/banner-time-logo.png;</span></p>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=474 <span class="attrs">div,picture</span></p>
+                <div class="block-element ">
+                  <p>ID=475 <span class="attrs">source</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=476 <span class="attrs">img:  src = /fileadmin/asset/logo/IDEA_League.png;</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=487 <span class="attrs">div</span></p>
+            <p>News</p>
+            <div class="block-element ">
+              <p>ID=489 <span class="attrs">div:  aria-live = "polite";</span></p>
+              <div class="block-element ">
+                <p>ID=492 <span class="attrs">div:  role = "group"; aria-label = "1 / 4";</span></p>
+                <div class="block-element ">
+                  <p>ID=497 <span class="attrs">div,figure,picture,img:  alt = "Donatella Sciuto e Ernesto Colnago con la pergamena di laurea"; src = /fileadmin/user_upload/news/2025/laurea_honoris_causa_colnago/Laurea_Colnago_cover_1920x1080.jpg;</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=498 <span class="attrs">div</span></p>
+                  <div class="block-element ">
+                    <p>ID=499 <span class="attrs">div</span></p>
+                    <div class="block-element ">
+                      <p>ID=501 <span class="attrs">span,time</span></p>
+                      <p>08.05.2025</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=503 <span class="attrs">header</span></p>
+                      <p>Laurea Magistrale ad Honorem a Ernesto Colnago</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=506 <span class="attrs">div</span></p>
+                      <p>Figura esemplare di manager e innovatore nel campo del ciclismo</p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=510 <span class="attrs">div,a:  clickable = true; title = "Laurea Magistrale ad Honorem a Ernesto Colnago"; href = /il-politecnico/news/dettaglio-news/laurea-magistr...;</span></p>
+                    <p>Leggi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=515 <span class="attrs">div:  role = "group"; aria-label = "2 / 4";</span></p>
+                <div class="block-element ">
+                  <p>ID=520 <span class="attrs">div,figure,picture,img:  src = /fileadmin/user_upload/news/2025/CareerDay_1920x1080_img.jpg;</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=521 <span class="attrs">div</span></p>
+                  <div class="block-element ">
+                    <p>ID=522 <span class="attrs">div</span></p>
+                    <div class="block-element ">
+                      <p>ID=524 <span class="attrs">span,time</span></p>
+                      <p>30.04.2025</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=526 <span class="attrs">header</span></p>
+                      <p>Career Day</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=529 <span class="attrs">div</span></p>
+                      <p>13-14-15 maggio 2025</p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=533 <span class="attrs">div,a:  clickable = true; title = "Career Day"; href = https://www.careerservice.polimi.it/it-IT/Meetings...;</span></p>
+                    <p>Leggi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=538 <span class="attrs">div:  role = "group"; aria-label = "3 / 4";</span></p>
+                <div class="block-element ">
+                  <p>ID=545 <span class="attrs">div,figure,picture,img:  alt = "Rappresentazione grafica di pannelli fotovoltaici"; src = /fileadmin/user_upload/news/2025/agrivoltaico_1.jpg;</span></p>
+                  <p>Agritech</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=546 <span class="attrs">div</span></p>
+                  <div class="block-element ">
+                    <p>ID=547 <span class="attrs">div</span></p>
+                    <div class="block-element ">
+                      <p>ID=549 <span class="attrs">span,time</span></p>
+                      <p>29.04.2025</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=551 <span class="attrs">header</span></p>
+                      <p>Agrivoltaico: una risposta sostenibile al conflitto tra cibo ed energia</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=554 <span class="attrs">div</span></p>
+                      <p>Uno studio del Politecnico su Earth’s Future evidenzia il potenziale delle colture sotto i pannelli solari</p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=558 <span class="attrs">div,a:  clickable = true; title = "Agrivoltaico: una risposta sostenibile al conflitto tra cibo ed energia"; href = /il-politecnico/news/dettaglio-news/agrivoltaico-u...;</span></p>
+                    <p>Leggi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-element ">
+                <p>ID=563 <span class="attrs">div:  role = "group"; aria-label = "4 / 4";</span></p>
+                <div class="block-element ">
+                  <p>ID=568 <span class="attrs">div,figure,picture,img:  alt = "MantovArchitettura 6 maggio 13 giugno 2025"; src = /fileadmin/user_upload/Banner_MANTOVARCHITETTURA_sito_web_polimi_800x600__1_.jpg;</span></p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=569 <span class="attrs">div</span></p>
+                  <div class="block-element ">
+                    <p>ID=570 <span class="attrs">div</span></p>
+                    <div class="block-element ">
+                      <p>ID=572 <span class="attrs">span,time</span></p>
+                      <p>29.04.2025</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=574 <span class="attrs">header</span></p>
+                      <p>MANTOVARCHITETTURA</p>
+                    </div>
+                    <div class="block-element ">
+                      <p>ID=577 <span class="attrs">div</span></p>
+                      <p>Al via la dodicesima edizione</p>
+                    </div>
+                  </div>
+                  <div class="block-element clickable-element">
+                    <p>ID=581 <span class="attrs">div,a:  clickable = true; title = "MANTOVARCHITETTURA"; href = https://www.mantovarchitettura.polimi.it/;</span></p>
+                    <p>Leggi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=585 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=591 <span class="attrs">a:  clickable = true; href = /il-politecnico/comunicazione/podcast;</span></p>
+                <p>Podcast</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=594 <span class="attrs">a:  clickable = true; href = /il-politecnico/news;</span></p>
+                <p>Tutte le news</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=597 <span class="attrs">a:  clickable = true;</span></p>
+          </div>
+          <div class="block-element ">
+            <p>ID=601 <span class="attrs">div</span></p>
+            <div class="block-element ">
+              <p>ID=607 <span class="attrs">div:  aria-live = "polite";</span></p>
+              <p>Eventi</p>
+              <div class="block-element clickable-element">
+                <p>ID=623 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "1 / 8"; href = https://www.eventi.polimi.it/events/milano-civil-w...;</span></p>
+                <p>09 maggio 2025 Incontri Milano Civil Week 2025 | Dalle acque del Lambro, una risorgiva creativa Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=641 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "2 / 8"; href = https://www.eventi.polimi.it/events/milano-civil-w...;</span></p>
+                <p>09 maggio 2025 Incontri Milano Civil Week 2025 | Data for Social Equality Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=659 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "3 / 8"; href = https://www.eventi.polimi.it/events/biomaterials-lab/;</span></p>
+                <p>09 maggio 2025 Eventi Bambini Festival Sviluppo Sostenibile | Biomaterials Lab Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=682 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "4 / 8"; href = https://www.eventi.polimi.it/events/proiezioni-ast...;</span></p>
+                <p>17 → marzo 09 maggio 2025 Mostre Milano Proiezioni Astratte - Mostra delle opere di Paolo Ventura, artista e… Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=700 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "5 / 8"; href = https://www.eventi.polimi.it/events/milano-civil-w...;</span></p>
+                <p>11 maggio 2025 Altro Milano Civil Week 2025 | Andar come fossimo acqua Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=718 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "6 / 8"; href = https://www.eventi.polimi.it/events/integration-an...;</span></p>
+                <p>12 maggio 2025 Convegni Integration and Challenges of Inter- and Transdisciplinary Research from an… Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=736 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "7 / 8"; href = https://www.eventi.polimi.it/events/cambiamento-cl...;</span></p>
+                <p>12 maggio 2025 Convegni Cambiamento Climatico e Società Leggi</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=754 <span class="attrs">div,a:  clickable = true; role = "group"; aria-label = "8 / 8"; href = https://www.eventi.polimi.it/events/festival-svilu...;</span></p>
+                <p>13 maggio 2025 Conferenze Festival Sviluppo Sostenibile | FutureWork4EuroPeople Leggi</p>
+              </div>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=768 <span class="attrs">div,a:  clickable = true; href = https://www.eventi.polimi.it; role = "button"; alt = "Tutti gli eventi PoliMi";</span></p>
+              <p>Tutti gli eventi</p>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=778 <span class="attrs">div</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=779 <span class="attrs">a:  clickable = true;</span></p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=789 <span class="attrs">p,a:  clickable = true; href = /campus-e-servizi;</span></p>
+              <p>La vita al Politecnico Campus e servizi I nostri campus offrono spazi e servizi per accompagnare il percorso formativo degli studenti e favorire la formazione di una comunità inclusiva, che mette al centro il benessere delle persone, Vai alla sezione</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=794 <span class="attrs">div</span></p>
+          <div class="block-element clickable-element">
+            <p>ID=798 <span class="attrs">div,a:  clickable = true; href = /il-politecnico/comunicazione/polimi-community; role = "button";</span></p>
+            <p>Polimi Community Tutti i servizi dell’ecosistema</p>
+          </div>
+          <div class="block-element ">
+            <p>ID=803 <span class="attrs">div:  aria-live = "polite";</span></p>
+            <div class="block-element clickable-element">
+              <p>ID=809 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "1 / 8"; href = https://www.residenze.polimi.it/; title = "Residenze";</span></p>
+              <p>Residenze</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=816 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "2 / 8"; href = https://www.biblio.polimi.it/; title = "Biblioteche";</span></p>
+              <p>Biblioteche</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=823 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "3 / 8"; href = /studenti/esami-di-stato; title = "Esami di stato";</span></p>
+              <p>Esami di stato</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=830 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "4 / 8"; href = https://www.careerservice.polimi.it/; title = "Career Service";</span></p>
+              <p>Career Service</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=837 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "5 / 8"; href = https://alumni.polimi.it/; title = "Alumni";</span></p>
+              <p>Alumni</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=844 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "6 / 8"; href = https://webeep.polimi.it/; title = "Webeep";</span></p>
+              <p>Webeep</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=851 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "7 / 8"; href = https://www.sport.polimi.it/; title = "Sport";</span></p>
+              <p>Sport</p>
+            </div>
+            <div class="block-element clickable-element">
+              <p>ID=858 <span class="attrs">div,p,a:  clickable = true; role = "group"; aria-label = "8 / 8"; href = https://www.pok.polimi.it/; title = "Pok";</span></p>
+              <p>Pok</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-element ">
+        <p>ID=861 <span class="attrs">footer</span></p>
+        <div class="block-element ">
+          <p>ID=862 <span class="attrs">div</span></p>
+          <div class="block-element ">
+            <p>ID=863 <span class="attrs">section</span></p>
+            <div class="block-element ">
+              <p>ID=865 <span class="attrs">div,img:  src = /_assets/4b51f00386267395f41e0940abbcd656/Images/logo-light.svg;</span></p>
+            </div>
+            <div class="block-element ">
+              <p>ID=866 <span class="attrs">div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=867 <span class="attrs">a:  clickable = true; href = https://www.instagram.com/polimi/; title = "Instagram";</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=868 <span class="attrs">a:  clickable = true; href = https://www.facebook.com/polimi/; title = "Facebook";</span></p>
+              </div>
+              <p>... 1 more (EXPAND_ID=866)</p>
+              <div class="block-element clickable-element">
+                <p>ID=870 <span class="attrs">a:  clickable = true; href = https://www.youtube.com/polimi; title = "YouTube";</span></p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=871 <span class="attrs">a:  clickable = true; href = https://www.linkedin.com/school/polimi/; title = "LinkedIn";</span></p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=872 <span class="attrs">ul</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=874 <span class="attrs">li,a:  clickable = true; href = /; title = "Italiano";</span></p>
+                <p>IT</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=878 <span class="attrs">li,a:  clickable = true; href = /en/; title = "English";</span></p>
+                <p>EN</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=881 <span class="attrs">hr</span></p>
+          </div>
+          <div class="block-element ">
+            <p>ID=882 <span class="attrs">section</span></p>
+            <div class="block-element ">
+              <p>ID=887 <span class="attrs">section,div,ul</span></p>
+              <p>Sedi</p>
+              <div class="block-element clickable-element">
+                <p>ID=890 <span class="attrs">li,p,a:  clickable = true; href = /il-politecnico/governance/strutture/sedi/milano-l...; title = "Milano Leonardo";</span></p>
+                <p>Milano Leonardo</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=894 <span class="attrs">li,p,a:  clickable = true; href = /il-politecnico/governance/strutture/sedi/milano-b...; title = "Milano Bovisa";</span></p>
+                <p>Milano Bovisa</p>
+              </div>
+              <p>... 3 more (EXPAND_ID=887)</p>
+              <div class="block-element clickable-element">
+                <p>ID=910 <span class="attrs">li,p,a:  clickable = true; href = https://www.polo-piacenza.polimi.it/; title = "Piacenza";</span></p>
+                <p>Piacenza</p>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=914 <span class="attrs">li,p,a:  clickable = true; href = /il-politecnico/progetti-di-ateneo/joint-school-of...; title = "Xi'an";</span></p>
+                <p>Xi'an</p>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=917 <span class="attrs">section,div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=919 <span class="attrs">h6,button:  clickable = true; type = button; aria-expanded = "false"; aria-controls = "footer__3";</span></p>
+                <p>Naviga il sito</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=923 <span class="attrs">div,ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=926 <span class="attrs">li,p,a:  clickable = true; href = /il-politecnico; title = "Il Politecnico";</span></p>
+                  <p>Il Politecnico</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=930 <span class="attrs">li,p,a:  clickable = true; href = /formazione; title = "Formazione";</span></p>
+                  <p>Formazione</p>
+                </div>
+                <p>... 8 more (EXPAND_ID=923)</p>
+                <div class="block-element clickable-element">
+                  <p>ID=966 <span class="attrs">li,p,a:  clickable = true; href = /imprese; title = "Imprese";</span></p>
+                  <p>Imprese</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=970 <span class="attrs">li,p,a:  clickable = true; href = /stampa; title = "Stampa";</span></p>
+                  <p>Stampa</p>
+                </div>
+              </div>
+            </div>
+            <p>... 1 more (EXPAND_ID=882)</p>
+            <div class="block-element ">
+              <p>ID=1031 <span class="attrs">section,div</span></p>
+              <div class="block-element clickable-element">
+                <p>ID=1033 <span class="attrs">h6,button:  clickable = true; type = button; aria-expanded = "false"; aria-controls = "footer__7";</span></p>
+                <p>Contattaci</p>
+              </div>
+              <div class="block-element ">
+                <p>ID=1037 <span class="attrs">div,ul</span></p>
+                <div class="block-element clickable-element">
+                  <p>ID=1040 <span class="attrs">li,p,a:  clickable = true; href = /il-politecnico/contatti; title = "Contatti";</span></p>
+                  <p>Contatti</p>
+                </div>
+                <div class="block-element clickable-element">
+                  <p>ID=1044 <span class="attrs">li,p,a:  clickable = true; href = https://go.polimi.it/rubrica; title = "Rubrica telefoni e mail";</span></p>
+                  <p>Rubrica telefoni e mail</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-element ">
+              <p>ID=1047 <span class="attrs">section,div</span></p>
+              <div class="block-element ">
+                <p>ID=1052 <span class="attrs">div,p</span></p>
+                <p>Sostieni il Politecnico</p>
+                <div class="block-element ">
+                  <p>ID=1054 <span class="attrs">br</span></p>
+                  <p>Contribuisci anche tu:</p>
+                </div>
+                <div class="block-element ">
+                  <p>ID=1056 <span class="attrs">br</span></p>
+                  <p>sostieni studenti e ricercatori del Politecnico di Milano</p>
+                </div>
+              </div>
+              <div class="block-element clickable-element">
+                <p>ID=1059 <span class="attrs">div,a:  clickable = true; href = https://www.dona.polimi.it/; title = "Dona anche tu"; role = "button";</span></p>
+                <p>Dona anche tu</p>
+              </div>
+            </div>
+          </div>
+          <div class="block-element ">
+            <p>ID=1061 <span class="attrs">hr</span></p>
+          </div>
+        </div>
+        <div class="block-element ">
+          <p>ID=1073 <span class="attrs">section,div</span></p>
+          <p>Politecnico di Milano, Piazza Leonardo da Vinci 32, 20133 Milano | P.IVA 04376620151 - C.F. 80057930150</p>
+          <div class="block-element clickable-element">
+            <p>ID=1075 <span class="attrs">p,a:  clickable = true; href = https://trasparenza.polimi.it/pagina771_accessibil...; title = "Accessibilità";</span></p>
+            <p>Accessibilità</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=1078 <span class="attrs">p,a:  clickable = true; href = https://www.polimi.it/il-politecnico/comunicazione...; title = "Privacy Policy";</span></p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="block-element clickable-element">
+            <p>ID=1081 <span class="attrs">p,a:  clickable = true; href = https://trasparenza.polimi.it/; title = "Amministrazione Trasparente";</span></p>
+            <p>Amministrazione Trasparente</p>
+          </div>
+        </div>
+      </div>
+      <div class="block-element clickable-element">
+        <p>ID=1083 <span class="attrs">a:  clickable = true; title = "Scroll to top"; href = #top;</span></p>
+      </div>
+      <div class="block-element clickable-element">
+        <p>ID=1085 <span class="attrs">button:  clickable = true; title = "Go to top";</span></p>
+      </div>
+    </div>
+</html>
