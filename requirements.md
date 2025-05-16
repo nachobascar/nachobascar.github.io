@@ -191,12 +191,10 @@ buttons:
   - [ID=3] Submit the form
   - [ID=4] Cancel the form
 forms:
-  - [title="Contact Form"] This is a contact form that can be filled out and submitted.
-    - submit_id: 3
-    - fields:
-      - [ID=5][type=checkbox][label=Subscribe to newsletter]: false
-      - [ID=6][type=text][label=Name][placeholder="Enter your name"][required=true]: ""
-      - [ID=7][type=email][label=Email][placeholder="Enter your email"][required=true]: "email@example.com"
+  - [title="Contact Form"][submit_id=3] This is a contact form that can be filled out and submitted.
+    - [ID=5][type=checkbox][label=Subscribe to newsletter]: false
+    - [ID=6][type=text][label=Name][placeholder="Enter your name"][required=true]: ""
+    - [ID=7][type=email][label=Email][placeholder="Enter your email"][required=true]: "email@example.com"
 
 # Metadata:
 
