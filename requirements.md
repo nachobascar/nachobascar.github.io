@@ -112,6 +112,7 @@ An example of what the output format could look like is as follows (this is not 
       - [aria-*]: accessibility labels for the element
       - [src, href, alt, title, type, role, value, placeholder]: Important attributes of the element
       - children: List of child elements
+    - elementIDMapping: mapping between the generated element IDs and the CSS selectors used to identify them
     - screenshot: Screenshot of the website
   - intent_information: parsed user input, including intent and context
     - objective: objective of the current browsing session
@@ -179,52 +180,34 @@ BODY[ID=0]
 - User Feedback: "The user has provided further information about their preferences, including the departure and return dates, and the departure city."
 
 # Current Website:
-- url: https://www.example.com
-- short_description: Example website for testing purposes
-- summary: This is an example website for testing purposes. It contains a variety of elements and actions that can be performed, including buttons, forms, and links.
-- links: 
-  - id: 1
-    href: Go to the homepage
-  - id: 2
-    href: Go to the contact page
-- buttons:
-  - id: 3
-    action: Submit the form
-  - id: 4
-    action: Cancel the form
-- forms:
-  - title: Contact Form
-    description: This is a contact form that can be filled out and submitted.
-    submit_id: 3
-    fields:
-      - id: 5
-        type: text
-        label: Name
-        placeholder: Enter your name
-        required: true
-      - id: 6
-        type: email
-        label: Email
-        placeholder: Enter your email
-        value: email@example.com
-        required: true
+url: https://www.example.com
+short_description: Example website for testing purposes
+summary: This is an example website for testing purposes. It contains a variety of elements and actions that can be performed, including buttons, forms, and links.
+
+links: 
+  - [ID=1] Go to the homepage
+  - [ID=2] Go to the contact page
+buttons:
+  - [ID=3] Submit the form
+  - [ID=4] Cancel the form
+forms:
+  - [title="Contact Form"] This is a contact form that can be filled out and submitted.
+    - submit_id: 3
+    - fields:
+      - [ID=5][type=checkbox][label=Subscribe to newsletter]: false
+      - [ID=6][type=text][label=Name][placeholder="Enter your name"][required=true]: ""
+      - [ID=7][type=email][label=Email][placeholder="Enter your email"][required=true]: "email@example.com"
 
 # Metadata:
 
 ## Session History:
-1. [Kayak](https://www.kayak.com)
-  - Kayak website for booking flights
-  - actions: Searched for flights from London to Madrid from 15th to 20th of December
-  - 5 min ago
-2. [Google](https://www.google.com)
-  - Google search engine
-  - actions: Searched for 'flights from London to Madrid' and clicked on the first result
-  - 7 min ago
+1. 5 min ago [Kayak](https://www.kayak.com): Kayak website for booking flights. Searched for flights from London to Madrid from 15th to 20th of December.
+2. 7 min ago [Google](https://www.google.com): Google search engine. Searched for 'flights from London to Madrid' and clicked on the first result
 ...
 
 ## Current User Preferences:
-- language: "en"
-- User prefers short and concise information, with no unnecessary details
+language: "en"
+User prefers short and concise information, with no unnecessary details
 ```
 
 
