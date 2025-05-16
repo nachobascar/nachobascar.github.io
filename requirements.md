@@ -4,10 +4,9 @@ This document outlines the requirements for the Agentic Browsing Input System (A
 
 The Agentic Browsing Controller System (ABCS) refers to any system that utilizes LLMs and AI Agents to assist users in browsing the web. Therefore, the ABIS is a crucial component of the ABCS, and is agnostic to the specific implementation of the ABCS. The ABIS is designed to be flexible and adaptable to different use cases, allowing for a wide range of applications in web browsing and interaction.
 
+The idea of this project is to separate the agentic browsing behavior in two layers: the ABIS and the ABCS
+
 ### Definitions
-
-The idea of this project is to separate the agentic browsing behavior in two layers:
-
 - **Agentic Browsing Input System (ABIS)**: The system that handles and processes the raw inputs from the user, browser and contextual information, transforming them into a structured format that can be easily understood and processed by the LLM.
 - **Agentic Browsing Controller System (ABCS)**: The system that utilizes LLMs and AI Agents to assist users in browsing the web. It is responsible for processing the ABIS output and performing the actions required to achieve the user's goals.
 - **Human-in-the-loop**: A system that requires or allows human intervention in the decision-making process. This could include providing feedback, asking for clarification, or requesting additional information from the user.
