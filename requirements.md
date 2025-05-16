@@ -39,11 +39,11 @@ The idea of this project is to separate the agentic browsing behavior in two lay
 
 The ABIS must keep track of a variety of metadata, including:
 
-- The browsing history of the user, including:
-  - The last websites visited which are relevant for the current session, including:
-    - The URL
-    - A small summary of the page content (e.g. "form page for personal information")
-    - The action taken before triggering the change of page (e.g. "pressed the submit button", "clicked on the X element", "back button", etc.)
+- The last websites visited which are relevant for the current session, including:
+  - The URL
+  - A small summary of the page content (e.g. "form page for personal information")
+  - The actions taken on that page (e.g. "filled personal user information form and submitted it")
+  - The time since we left the page (e.g. "5 min ago)
 - The current context of the user, including:
   - The users preferences: 
     - Language
@@ -79,7 +79,7 @@ An example of what the output format could look like is as follows (this is not 
     - history: list of the last websites visited which are relevant for the current session, including
       - url: URL of the website
       - short_description: short description of the page content
-      - last_action: last action taken before triggering the change of page 
+      - actions: Summary of the actions taken on that page 
       - timestamp: timestamp of the last action
     - user_preferences: user preferences, including
       - language: preferred language of the user
@@ -134,7 +134,7 @@ This format should be:
 - Simplified: The output should be simplified to allow the LLM to focus on the most relevant information and actions, without being overwhelmed by unnecessary details. Always keeping in mind the current objective and context of the user.
 
 The LLM-friendly output could consist of more than one output, including
-- A simplified version of the website structure, parsed in an LLM-friendly format, supposed to be given to the LLM as a vectorized file. For example, a possible friendly output could look like:
+- A simplified version of the website structure, parsed in an LLM-friendly format, supposed to be given to the LLM as a vectorized file. For example, a possible LLM-friendly output could look like:
 
 ```
 BODY[ID=0]
@@ -185,9 +185,9 @@ BODY[ID=0]
 - summary: This is an example website for testing purposes. It contains a variety of elements and actions that can be performed, including buttons, forms, and links.
 - links: 
   - id: 1
-    action: Navigate to the homepage
+    href: Go to the homepage
   - id: 2
-    action: Navigate to the contact page
+    href: Go to the contact page
 - buttons:
   - id: 3
     action: Submit the form
@@ -215,12 +215,12 @@ BODY[ID=0]
 ## Session History:
 1. [Kayak](https://www.kayak.com)
   - Kayak website for booking flights
-  - last_action: Clicked on the 'Search for flights' button
-  - timestamp: 2023-10-01T12:00:00Z
+  - actions: Searched for flights from London to Madrid from 15th to 20th of December
+  - 5 min ago
 2. [Google](https://www.google.com)
   - Google search engine
-  - last_action: Clicked on Kayak link
-  - timestamp: 2023-10-01T11:00:00Z
+  - actions: Searched for 'flights from London to Madrid' and clicked on the first result
+  - 7 min ago
 ...
 
 ## Current User Preferences:
@@ -231,7 +231,7 @@ BODY[ID=0]
 
 
 
-- An image output of the website, including the screenshot of the website itself and identified elements of interest (e.g. boxes with IDs over important non-identifyable elements).
+- An image output of the website, including the screenshot of the website itself and identified elements of interest (e.g. boxes with IDs over important non-identifiable elements).
 
 ### 7. Error Handling
 
