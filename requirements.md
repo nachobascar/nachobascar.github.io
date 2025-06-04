@@ -13,6 +13,48 @@ The idea of this project is to separate the agentic browsing behavior in two lay
 - **Human-out-of-the-loop**: A system that operates autonomously, without the need for human intervention. This could include fully automated systems that do not require any input or feedback from the user.
 - **Self-correcting mechanism**: A system that is able to adapt to behavioral errors, misunderstandings, deviations from the plan. This could include a feedback mechanism provided by the agent, allowing to keep in mind any errors or new requirements that may arise during the browsing session.
 
+## Current Objective Doubts and Project Scope
+
+Due to the last discussions over the project scope and objective, this section aims to present the current doubts and to help defining the direction to take.
+
+The project aims on transforming the current raw data (HTML input, actions history, etc.) into a structured format for helping on browsing navigation and actions. The goal is to output data in a format that is optimized for the controller system (system in charge of controlling the browser actions and handling user requirements).
+
+The doubt to be clarified is whether this final controller system will be a LLM-based system, or a more traditional system like screen readers. This does not refer as to whether the ABIS (the current data parser to be developed) will be LLM-based or not, but rather if the final system using the ABIS output will be LLM-based or not.
+
+### ¿Why is important to clarify this?
+I strongly believe that the waay of controlling and using the browser will differ depending if it's a LLM-based system or not. LLM's allows for a more flexible and adaptable system, therefore it could benefit from more context and information to avoid missing important details, while a more traditional system could get overwhelmed by the amount of information and context provided, and therefore it would require a more simplified and structured format. 
+
+Both systems have their own advantages and disadvantages, but I feel that this project should focus on one of them, and not try to cover both at the same time. This because both systems are quite independent and with their own requirements. Furthermore, developing one doesn't mean that the other cannot be developed later on to allow both systems to work together (e.g. by having an automatic switch which toggles between the two depending on the user's needs).
+
+### LLM-based Controller System
+- Pros:
+  - Flexible and adaptable to different use cases.
+  - Can handle complex tasks and interactions.
+  - Can benefit from more context and information to avoid missing important details.
+  - Can give users a more natural and conversational experience.
+  - Can evolve and improve over time as LLMs improve and new techniques are developed.
+- Cons:
+  - It's slower due to the need of processing the input and generating the output.
+  - Is dependent on external LLMs, which could introduce latency and reliability issues. (Even if the reliability could be mitigated by using different LLMs and fallback mechanisms, or by using a local LLM like LLama as a fallback)
+
+### Traditional Controller System
+- Pros:
+  - Faster and more responsive, as it doesn't require processing the input and generating the output.
+  - More reliable, as it doesn't depend on external LLMs.
+  - Can be easier for current visually impaired users to use, as it follows a more traditional approach.
+- Cons:
+  - Less flexible and adaptable to different use cases.
+  - Could be less natural and conversational, leading to a less engaging user experience.
+  - Could be harder to evolve and improve over time, as it relies on more traditional techniques.
+  - Can get to be hard to find the balance between flexibility and simplicity, which could be the reason for the current pain points in the current screen readers and accessibility tools.
+
+### Personal Opinion
+I believe that the project should focus on developing an ABIS that is optimized for a LLM-based system, as it allows for a more flexible and adaptable approach, and can provide a more natural and conversational experience for the user. It would basically mimic the current working project (the one for the form of the Comune Di Milano) but generalized to any website.
+
+The good thing of focusing on a LLM-based system is that it can work parallely with current screen readers. So the user could benefit from the LLM for a faster, easier interaction, but still fall back to their favorite screen reader when handling tasks that the system was not able to handle (while still being assisted by the LLM to provide context and information).
+
+# Project Requirements assuming a LLM-based Controller System
+
 ## Requirements
 ### 0. System Interfaces and Data Flow
 - ABIS Input: [user text input, DOM snapshot, past ABIS metadata output]
