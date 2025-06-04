@@ -47,6 +47,7 @@ Both systems have their own advantages and disadvantages, but I feel that this p
   - Could be less natural and conversational, leading to a less engaging user experience.
   - Could be harder to evolve and improve over time, as it relies on more traditional techniques.
   - Can get to be hard to find the balance between flexibility and simplicity, which could be the reason for the current pain points in the current screen readers and accessibility tools.
+  - Already exists a lot of tools and systems that are already doing this, so it would be hard to compete with them.
 
 ### Personal Opinion
 I believe that the project should focus on developing an ABIS that is optimized for a LLM-based system, as it allows for a more flexible and adaptable approach, and can provide a more natural and conversational experience for the user. It would basically mimic the current working project (the one for the form of the Comune Di Milano) but generalized to any website.
