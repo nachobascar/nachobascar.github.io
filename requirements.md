@@ -52,7 +52,7 @@ Both systems have their own advantages and disadvantages, but I feel that this p
 ### Personal Opinion
 I believe that the project should focus on developing an ABIS that is optimized for a LLM-based system, as it allows for a more flexible and adaptable approach, and can provide a more natural and conversational experience for the user. It would basically mimic the current working project (the one for the form of the Comune Di Milano) but generalized to any website.
 
-The good thing of focusing on a LLM-based system is that it can work parallely with current screen readers. So the user could benefit from the LLM for a faster, easier interaction, but still fall back to their favorite screen reader when handling tasks that the system was not able to handle (while still being assisted by the LLM to provide context and information).
+The good thing of focusing on a LLM-based system is that it can work parallely with current screen readers. So the user could benefit from the LLM for a faster, easier interaction, but still fall back to their favorite screen reader when handling tasks that the system was not able to handle, while still being assisted by the LLM to provide context and information. Basically, it would allow an hybrid usage between the new LLM-based system and the current prefered solution of the user, which is different from developing both systems at the same time.
 
 # Project Requirements assuming a LLM-based Controller System
 
