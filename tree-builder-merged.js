@@ -279,10 +279,6 @@ var treeToText = (node, level = 0, minimize = false) => {
   return result;
 };
 
-var exportToYaml = (tree) => {
-  return jsyaml.dump(tree, { lineWidth: -1 });
-};
-
 var treeToHTML = (
   node,
   {
@@ -295,32 +291,35 @@ var treeToHTML = (
   let result = "";
   if (level === 0) {
     result += `<!DOCTYPE html>
-<html>
+<html>`;
+    if (humanReadable) {
+      result += `
   <head>
     <meta charset=\"UTF-8\">
     <style>
-      .block-element {
-        display: block; border-radius: 0.5rem; text-align: start;
-        padding: 0.5rem; margin: 0.5rem; background-color: #f0f0f0;
-        border: 1px solid #ccc; font-size: 0.8rem;
-        font-family: Arial, sans-serif;
-        text-wrap: pretty;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .clickable-element {
-        cursor: pointer; background-color: #e0f7fa;
-      }
-      p {
-        margin: 0.5rem 0;
-      }
-      .attrs {
-        font-size: 0.8rem;
-        color: #555;
-      }
+    .block-element {
+      display: block; border-radius: 0.5rem; text-align: start;
+      padding: 0.5rem; margin: 0.5rem; background-color: #f0f0f0;
+      border: 1px solid #ccc; font-size: 0.8rem;
+      font-family: Arial, sans-serif;
+      text-wrap: pretty;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .clickable-element {
+      cursor: pointer; background-color: #e0f7fa;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    .attrs {
+      font-size: 0.8rem;
+      color: #555;
+    }
     </style>
-  </head>\n`;
+    </head>\n`;
+    }
   }
   const nodeTags = new Set(node.tagName.split(","));
   if (nodeTags.intersection(TAGS_TO_MINIMIZE).size > 0 && !skipMinimization) {
@@ -329,9 +328,7 @@ var treeToHTML = (
   const indent = "  ".repeat(level);
   // const lastTag = node.tagName.split(",").pop().toLowerCase();
   const lastTag = "div";
-  result += `    ${indent}<${lastTag} id=${node.id} class="block-element ${
-    node.clickable ? "clickable-element" : ""
-  }"`;
+  result += `    ${indent}<${lastTag} id=${node.id}`;
   const attrsToAdd = {};
   for (const attr in node) {
     if (
@@ -341,6 +338,12 @@ var treeToHTML = (
       attrsToAdd[attr] = node[attr];
       result += ` ${attr}="${node[attr]}"`;
     }
+  }
+
+  if (humanReadable) {
+    result += ` class="block-element ${
+      node.clickable ? "clickable-element" : ""
+    }"`;
   }
   result += ">\n";
 
@@ -662,12 +665,22 @@ var buildTree = () => {
   return {
     tree,
     identifierMapping,
-    yamlTree: exportToYaml(tree),
     htmlTree: treeToHTML(tree, {
       skipMinimization: true,
-      humanReadable: true,
+      humanReadable: false,
     }),
     jsonTree: JSON.stringify(tree, null, 2),
     textTree: treeToText(tree),
   };
 };
+
+var buildAndPrintTree = () => {
+  const { tree, identifierMapping, yamlTree, htmlTree, jsonTree, textTree } =
+    buildTree();
+
+  console.log(htmlTree);
+  // console.log(textTree);
+  // console.log(jsonTree);
+};
+
+buildAndPrintTree();
